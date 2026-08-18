@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Recsys/从 RankMixer 到 OneRanker：2025—2026 大厂搜推大模型技术路线.md",
+                "file": "Life/mumu/沐沐成长记录.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "从 RankMixer 到 OneRanker：2025—2026 大厂搜推大模型技术路线"
+              "title": "沐沐成长记录"
             }
           }
         ]
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Recsys/从 RankMixer 到 OneRanker：2025—2026 大厂搜推大模型技术路线.md",
+                "file": "Life/mumu/沐沐成长记录.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Recsys/从 RankMixer 到 OneRanker：2025—2026 大厂搜推大模型技术路线.md",
+                "file": "Life/mumu/沐沐成长记录.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -177,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Recsys/从 RankMixer 到 OneRanker：2025—2026 大厂搜推大模型技术路线.md",
+                "file": "Life/mumu/沐沐成长记录.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -204,10 +204,12 @@
       "bases:新建数据库": false
     }
   },
-  "active": "0466d3656dc0f835",
+  "active": "883323cb1df37a8a",
   "lastOpenFiles": [
-    "Life/Eric/勋勋游泳纪录.md",
     "Recsys/从 RankMixer 到 OneRanker：2025—2026 大厂搜推大模型技术路线.md",
+    "Life/mumu/沐沐成长记录.md",
+    "Life/mumu",
+    "Life/Eric/勋勋游泳纪录.md",
     "Clippings",
     "Life/Eric/勋勋英语课纪录.md",
     "欢迎.md",
