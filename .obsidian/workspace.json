@@ -185,13 +185,23 @@
               "icon": "lucide-list",
               "title": "大纲"
             }
+          },
+          {
+            "id": "5d1539d04bbdc118",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {},
+              "icon": "bot",
+              "title": "Claudian"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -201,13 +211,16 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:新建数据库": false
+      "bases:新建数据库": false,
+      "realclaudian:Open Claudian": false
     }
   },
-  "active": "883323cb1df37a8a",
+  "active": "0466d3656dc0f835",
   "lastOpenFiles": [
-    "Recsys/从 RankMixer 到 OneRanker：2025—2026 大厂搜推大模型技术路线.md",
+    "Note",
     "Life/mumu/沐沐成长记录.md",
+    "未命名.md",
+    "Recsys/从 RankMixer 到 OneRanker：2025—2026 大厂搜推大模型技术路线.md",
     "Life/mumu",
     "Life/Eric/勋勋游泳纪录.md",
     "Clippings",
