@@ -1,13 +1,12 @@
 ---
-title: "从 RankMixer 到 OneRanker：2025—2026 大厂搜推大模型技术路线"
-source: "https://zhuanlan.zhihu.com/p/2018371788569096345"
+title: 从 RankMixer 到 OneRanker：2025—2026 大厂搜推大模型技术路线
+source: https://zhuanlan.zhihu.com/p/2018371788569096345
 author:
   - "[[Leopold]]"
 published:
 created: 2026-08-18
-description: "导语如果将 2023 年视为推荐系统开始系统性讨论“大模型化”的起点，那么 2025—2026 年更像是这一技术方向真正进入产业深水区的阶段。 这一轮演进已经明显超出“参数规模扩张”的范畴，而是在四个层面同步发生：…"
+description: 导语如果将 2023 年视为推荐系统开始系统性讨论“大模型化”的起点，那么 2025—2026 年更像是这一技术方向真正进入产业深水区的阶段。 这一轮演进已经明显超出“参数规模扩张”的范畴，而是在四个层面同步发生：…
 tags:
-  - "clippings"
 ---
 [收录于 · AI 长风破浪](https://www.zhihu.com/column/aisailing)
 

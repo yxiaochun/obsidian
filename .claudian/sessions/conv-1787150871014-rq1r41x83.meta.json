@@ -1,0 +1,27 @@
+{
+  "id": "conv-1787150871014-rq1r41x83",
+  "providerId": "codex",
+  "title": "Check if system runs normally",
+  "titleGenerationStatus": "success",
+  "createdAt": 1787150871029,
+  "lastActivityAt": 1787150878536,
+  "sessionId": "01a01a7e-2a67-7681-8b12-e912058b152b",
+  "selectedModel": "deepseek-v4-flash",
+  "providerState": {
+    "threadId": "01a01a7e-2a67-7681-8b12-e912058b152b",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yangxiaochun/.codex/sessions/2026/08/19/rollout-2026-08-19T22-47-51-01a01a7e-2a67-7681-8b12-e912058b152b.jsonl",
+    "transcriptRootPath": "/Users/yangxiaochun/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "usage": {
+    "inputTokens": 9522,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 9344,
+    "contextWindow": 996147,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 9522,
+    "percentage": 1,
+    "model": "deepseek-v4-flash"
+  }
+}

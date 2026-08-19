@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1787150871014-rq1r41x83",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787150871065-cl9ywx5",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1787150870993-v8pidjn",
+      "timestamp": 1787150870993,
+      "rawDisplayText": "你好，能正常运行吗",
+      "canonicalText": "你好，能正常运行吗",
+      "images": [],
+      "contentDigest": "425e813cb58d3c1d2ac382612d471f23dade3f7584917282d472ae21bfda610d",
+      "providerUserMessageId": "01a01a7e-2da6-7a02-a96c-cbc6e3370e7c",
+      "providerAssistantMessageId": "a9bbcc90-cecb-4655-b360-ae8cb2d69279"
+    }
+  ]
+}
