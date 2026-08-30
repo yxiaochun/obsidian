@@ -1,0 +1,225 @@
+{
+  "main": {
+    "id": "e11568813730b2f4",
+    "type": "split",
+    "children": [
+      {
+        "id": "78505792b8892de8",
+        "type": "tabs",
+        "dimension": 76.34297520661157,
+        "children": [
+          {
+            "id": "46d8a5588ea2f7fa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI写入/2026-07-17｜AI竞争转向系统入口、算力与监管.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-07-17｜AI竞争转向系统入口、算力与监管"
+            }
+          }
+        ]
+      },
+      {
+        "id": "01050120cb12314d",
+        "type": "tabs",
+        "dimension": 23.65702479338843,
+        "children": [
+          {
+            "id": "abb1a26ebb136eb9",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "302c892a50dcafd0",
+    "type": "split",
+    "children": [
+      {
+        "id": "d53abc4f82a014ea",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "063a77e3ad658b41",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "deac1101ef07426b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "392e9fbfb9ea244a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1328e4c3698c51f6",
+    "type": "split",
+    "children": [
+      {
+        "id": "c93d08b0d964d43f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "88b1e8ddacbe167b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "AGENTS.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "AGENTS 的反向链接列表"
+            }
+          },
+          {
+            "id": "3e1dde1df07eeb18",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "AGENTS.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "AGENTS 的出链列表"
+            }
+          },
+          {
+            "id": "b5d4f3bd5c31f838",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "d7ae2e1b5816a424",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "6600f819a80f3a79",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "AGENTS.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "AGENTS 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "46d8a5588ea2f7fa",
+  "lastOpenFiles": [
+    "模板/普通笔记模板.md",
+    "模板/日记模板.md",
+    "模板/文章模板.md",
+    "AGENTS.md",
+    "标签索引.md",
+    "欢迎.md",
+    "AI写入/2026-07-17｜AI竞争转向系统入口、算力与监管.md",
+    "AI写入/2026-07-17｜AI科技新闻简报.md",
+    "AI写入",
+    "模板",
+    "归档",
+    "Assets",
+    "中间过程",
+    "我的笔记",
+    "Clippings",
+    "草稿"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "conv-1787843537427-w3k879xqj",
+  "providerId": "codex",
+  "title": "skills",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1787843537430,
+  "lastActivityAt": 1788053968082,
+  "sessionId": "01a043c7-6a6d-7f30-af68-0a1ba87636c3",
+  "selectedModel": "deepseek-v4-pro",
+  "providerState": {
+    "threadId": "01a043c7-6a6d-7f30-af68-0a1ba87636c3",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yangxiaochun/.codex/sessions/2026/08/27/rollout-2026-08-27T23-12-17-01a043c7-6a6d-7f30-af68-0a1ba87636c3.jsonl",
+    "transcriptRootPath": "/Users/yangxiaochun/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "usage": {
+    "inputTokens": 182954,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 182784,
+    "contextWindow": 996147,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 182954,
+    "percentage": 18,
+    "model": "deepseek-v4-pro"
+  }
+}
