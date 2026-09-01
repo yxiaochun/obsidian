@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1787112526711-j88fw2hsw",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787112526803-1327673",
+      "userTurnOrdinal": 1,
+      "state": "staged",
+      "localMessageId": "msg-1787112526675-gvpfvdy",
+      "timestamp": 1787112526675,
+      "rawDisplayText": "你好，你在线吗",
+      "canonicalText": "你好，你在线吗",
+      "images": [],
+      "contentDigest": "3565ba38615fc9641eadd97402b49e0afc8c5ac4fc565fc59a4da03a1f74802c"
+    }
+  ]
+}
