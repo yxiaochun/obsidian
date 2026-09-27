@@ -182,6 +182,18 @@
       "contentDigest": "fc2940c4ca0174f840c1645f9de5513b9bc53f25be242dae38a74a4abdea2f80",
       "providerUserMessageId": "01a05051-3845-7682-b512-6201a841abb4",
       "providerAssistantMessageId": "cfd227aa-cc18-4946-b328-54bdae9d833a"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788141454047-2qcj9xl",
+      "userTurnOrdinal": 1,
+      "state": "staged",
+      "localMessageId": "msg-1788141454011-n3kalf0",
+      "timestamp": 1788141454011,
+      "rawDisplayText": "skills",
+      "canonicalText": "skills",
+      "images": [],
+      "contentDigest": "be00284d765086e7f56496a6897678f792403b47cc1919a69384bf5fedf7ce52"
     }
   ]
 }

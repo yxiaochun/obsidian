@@ -5,15 +5,8 @@
   "titleGenerationStatus": "success",
   "createdAt": 1787150871029,
   "lastActivityAt": 1787150878536,
-  "sessionId": "01a01a7e-2a67-7681-8b12-e912058b152b",
+  "sessionId": null,
   "selectedModel": "deepseek-v4-flash",
-  "providerState": {
-    "threadId": "01a01a7e-2a67-7681-8b12-e912058b152b",
-    "nativeConversationContextEstablished": true,
-    "sessionFilePath": "/Users/yangxiaochun/.codex/sessions/2026/08/19/rollout-2026-08-19T22-47-51-01a01a7e-2a67-7681-8b12-e912058b152b.jsonl",
-    "transcriptRootPath": "/Users/yangxiaochun/.codex/sessions",
-    "workspaceDependencyToolVersion": 1
-  },
   "usage": {
     "inputTokens": 9522,
     "cacheCreationInputTokens": 0,
