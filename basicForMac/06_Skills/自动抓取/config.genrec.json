@@ -1,0 +1,126 @@
+{
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4o-mini",
+    "api_key_env": "OPENAI_API_KEY",
+    "temperature": 0.3,
+    "max_tokens": 4096,
+    "throttle_sec": 0,
+    "analysis_concurrency": 2,
+    "enrichment_concurrency": 2,
+    "languages": ["en", "zh"]
+  },
+  "processing": {
+    "profiles_dir": "profiles",
+    "default_profile": "genrec",
+    "profile_settings": {
+      "genrec": {
+        "threshold": 6.5,
+        "topic_dedup": true
+      },
+      "tech-news": {
+        "threshold": 7.5,
+        "topic_dedup": true
+      }
+    }
+  },
+  "display": {
+    "icon_style": "emoji"
+  },
+  "email": {
+    "enabled": false,
+    "smtp_server": "smtp.qq.com",
+    "smtp_port": 465,
+    "imap_server": "imap.qq.com",
+    "imap_port": 993,
+    "email_address": "placeholder@example.com"
+  },
+  "sources": {
+    "hackernews": {
+      "enabled": true,
+      "fetch_top_stories": 20,
+      "min_score": 50,
+      "profile": "genrec"
+    },
+    "rss": [
+      {
+        "name": "arXiv cs.IR",
+        "url": "https://rss.arxiv.org/rss/cs.IR",
+        "enabled": true,
+        "category": "arxiv",
+        "profile": "genrec"
+      },
+      {
+        "name": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/feed.xml",
+        "enabled": true,
+        "category": "industry-blog",
+        "profile": "genrec",
+        "content_extractor": "trafilatura"
+      },
+      {
+        "name": "Google Research Blog",
+        "url": "https://research.google/blog/rss/",
+        "enabled": true,
+        "category": "industry-blog",
+        "profile": "genrec",
+        "content_extractor": "trafilatura"
+      }
+    ],
+    "reddit": {
+      "enabled": true,
+      "subreddits": [
+        {
+          "subreddit": "MachineLearning",
+          "enabled": true,
+          "sort": "hot",
+          "time_filter": "day",
+          "fetch_limit": 15,
+          "min_score": 30,
+          "profile": "genrec"
+        }
+      ],
+      "fetch_comments": 5
+    },
+    "ossinsight": {
+      "enabled": true,
+      "period": "past_24_hours",
+      "languages": ["Python", "Jupyter Notebook"],
+      "keywords": ["recommender", "recommendation", "retrieval", "rag", "llm"],
+      "min_stars": 10,
+      "max_items": 30,
+      "category": "oss-trending",
+      "profile": "genrec"
+    },
+    "google_news": {
+      "enabled": true,
+      "query": "\"generative recommendation\" OR \"LLM recommender system\"",
+      "language": "en",
+      "country": "US",
+      "max_results": 50,
+      "category": "industry-news",
+      "profile": "genrec"
+    }
+  },
+  "collection": {
+    "time_window_hours": 24
+  },
+  "digest": {
+    "max_items": null,
+    "profile_order": ["genrec", "tech-news"],
+    "category_groups": {
+      "生成式推荐": {
+        "limit": 10,
+        "categories": ["arxiv", "oss-trending"]
+      },
+      "行业动态": {
+        "limit": 10,
+        "categories": ["industry-blog", "industry-news"]
+      }
+    },
+    "default_group": "其他"
+  },
+  "webhook": {
+    "enabled": false
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1790411599655-1buxgikqa",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790411599697-mlcwwy3",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1790411599649-479qzd6",
+      "timestamp": 1790411599649,
+      "rawDisplayText": "你好",
+      "canonicalText": "你好",
+      "context": {
+        "linkedContent": {
+          "path": "02_Knowledge/模型与案例/LONGER：全局token稳定超长行为序列建模.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "815b1925f3db319cfc8ef8cad8a91b3f8b512f630d8f82635cb105e93e666c2a",
+      "providerUserMessageId": "01a0dcd8-f203-77e2-baaf-7619ed98619c",
+      "providerAssistantMessageId": "msg_resp_2026092616332121f718b6484d447d_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790411660781-zjzu7li",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1790411660778-lmi1vbd",
+      "timestamp": 1790411660778,
+      "rawDisplayText": "笔记中的CLS是什么",
+      "canonicalText": "笔记中的CLS是什么",
+      "images": [],
+      "contentDigest": "3c5a34ba445089a68d25a1ee18cae0cbeff1a26a17a3bfc47065b26bf38f632f",
+      "providerUserMessageId": "01a0dcd9-de1c-7741-8cf9-514633982851",
+      "providerAssistantMessageId": "msg_resp_20260926163601df7b0ad90c6f4035_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790416519536-xg0ka0b",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1790416519531-l8fixes",
+      "timestamp": 1790416519531,
+      "rawDisplayText": "Token Merge阶段的n, d, k参数分别指什么，举例说明一下这块的具体逻辑",
+      "canonicalText": "Token Merge阶段的n, d, k参数分别指什么，举例说明一下这块的具体逻辑",
+      "context": {
+        "editorSelection": {
+          "notePath": "02_Knowledge/模型与案例/LONGER：全局token稳定超长行为序列建模.md",
+          "mode": "selection",
+          "selectedText": "**Token Merge**",
+          "lineCount": 1,
+          "startLine": 60
+        }
+      },
+      "images": [],
+      "contentDigest": "6d997309ed51002eee1273e0330a10feff60b6ddc795799498ebf9eb555d4b7f",
+      "providerUserMessageId": "01a0dd24-01a8-7902-948a-290c28f4f3f5",
+      "providerAssistantMessageId": "msg_resp_202609261755401dc498b7022d4be7_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790417064225-juq6l7s",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1790417064221-6taciiy",
+      "timestamp": 1790417064221,
+      "rawDisplayText": "Recent 采样比 learnable query 和 uniform sampling 更有效，说明近期行为提供了重要的 query 初始化 这里怎么理解",
+      "canonicalText": "Recent 采样比 learnable query 和 uniform sampling 更有效，说明近期行为提供了重要的 query 初始化 这里怎么理解",
+      "context": {
+        "editorSelection": {
+          "notePath": "02_Knowledge/模型与案例/LONGER：全局token稳定超长行为序列建模.md",
+          "mode": "selection",
+          "selectedText": "Recent 采样比 learnable query 和 uniform sampling 更有效，说明近期行为提供了重要的 query 初始化",
+          "lineCount": 1,
+          "startLine": 62
+        }
+      },
+      "images": [],
+      "contentDigest": "14d037fa49da2851658056d3f7e790e13e0fc316addef77b2d2837688a378dbb",
+      "providerUserMessageId": "01a0dd2c-5150-7950-807f-16c21c541e76",
+      "providerAssistantMessageId": "msg_resp_20260926180424108061f13aef4ce9_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790417343651-k2nvq2f",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1790417343648-k4px3cw",
+      "timestamp": 1790417343648,
+      "rawDisplayText": "当前笔记中对这里描述不够清楚，完善一下吧",
+      "canonicalText": "当前笔记中对这里描述不够清楚，完善一下吧",
+      "context": {
+        "editorSelection": {
+          "notePath": "02_Knowledge/模型与案例/LONGER：全局token稳定超长行为序列建模.md",
+          "mode": "selection",
+          "selectedText": "Recent 采样比 learnable query 和 uniform sampling 更有效，说明近期行为提供了重要的 query 初始化",
+          "lineCount": 1,
+          "startLine": 62
+        }
+      },
+      "images": [],
+      "contentDigest": "b59aea664759f0b3d684bef0243e613cc1c2a74e87285d0abadc27986cc546cb",
+      "providerUserMessageId": "01a0dd30-94fb-78b2-8db2-f14b9c479063",
+      "providerAssistantMessageId": "msg_resp_20260926180938ec344b2346e1494a_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790417438555-4fv3cp8",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "localMessageId": "msg-1790417438552-9deutq9",
+      "timestamp": 1790417438552,
+      "rawDisplayText": "**Hybrid attention** 分两段，这里的两段分别指什么，有啥区别",
+      "canonicalText": "**Hybrid attention** 分两段，这里的两段分别指什么，有啥区别",
+      "context": {
+        "editorSelection": {
+          "notePath": "02_Knowledge/模型与案例/LONGER：全局token稳定超长行为序列建模.md",
+          "mode": "selection",
+          "selectedText": "**Hybrid attention** 分两段",
+          "lineCount": 1,
+          "startLine": 62
+        }
+      },
+      "images": [],
+      "contentDigest": "25b519d7afd0967dcede51c6d65d9f6aba62c1bd8911501d9dc674976b9ab862",
+      "providerUserMessageId": "01a0dd32-0785-7030-973c-a6bbd723df0b",
+      "providerAssistantMessageId": "msg_resp_202609261810392f364df4ac1a4624_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790418284066-wlagqsg",
+      "userTurnOrdinal": 7,
+      "state": "accepted",
+      "localMessageId": "msg-1790418284062-h3ygj0t",
+      "timestamp": 1790418284062,
+      "rawDisplayText": "第二段仅对近期行为Token做self attention吗？",
+      "canonicalText": "第二段仅对近期行为Token做self attention吗？",
+      "context": {
+        "editorSelection": {
+          "notePath": "02_Knowledge/模型与案例/LONGER：全局token稳定超长行为序列建模.md",
+          "mode": "selection",
+          "selectedText": "**Hybrid attention** 分两段",
+          "lineCount": 1,
+          "startLine": 62
+        }
+      },
+      "images": [],
+      "contentDigest": "794eb28ec2a9aa6a1e2cf7a91de3958222c5318f6e92af32af61d8f96a42b4b8",
+      "providerUserMessageId": "01a0dd3e-ee79-7973-843e-ad91bf017045",
+      "providerAssistantMessageId": "msg_resp_2026092618251834d88c85a8034269_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790418984891-kulg8k9",
+      "userTurnOrdinal": 8,
+      "state": "accepted",
+      "localMessageId": "msg-1790418984886-1azunlh",
+      "timestamp": 1790418984886,
+      "rawDisplayText": "第二段的self attention为啥要堆叠多层",
+      "canonicalText": "第二段的self attention为啥要堆叠多层",
+      "context": {
+        "editorSelection": {
+          "notePath": "02_Knowledge/模型与案例/LONGER：全局token稳定超长行为序列建模.md",
+          "mode": "selection",
+          "selectedText": "**Hybrid attention** 分两段",
+          "lineCount": 1,
+          "startLine": 62
+        }
+      },
+      "images": [],
+      "contentDigest": "1d9a7efc61cd1a6cbdd05ce3b1237d045b5fb1c3ec71635dba9f956da2bfec2e",
+      "providerUserMessageId": "01a0dd49-9ffa-7792-b9e1-226622f2d439",
+      "providerAssistantMessageId": "msg_resp_202609261836255f7463392ced46d7_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790420558145-guzm85x",
+      "userTurnOrdinal": 9,
+      "state": "accepted",
+      "localMessageId": "msg-1790420558141-lu1ip6b",
+      "timestamp": 1790420558141,
+      "rawDisplayText": "结合“抖音广告&电商LONGER无GSU的End2End长序列建模”这个笔记，完善一下LONGER的精读卡片",
+      "canonicalText": "结合“抖音广告&电商LONGER无GSU的End2End长序列建模”这个笔记，完善一下LONGER的精读卡片",
+      "images": [],
+      "contentDigest": "1d95c7f11f62d3757f125d5d9aa38a6b30ad1afcb137e1ab622d8c5f72c3c4c3",
+      "providerUserMessageId": "01a0dd61-a173-7c00-88be-f21719da444e",
+      "providerAssistantMessageId": "msg_resp_202609261904352d5ae0e7b8f34d9d_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790494977114-lj43nqi",
+      "userTurnOrdinal": 10,
+      "state": "accepted",
+      "localMessageId": "msg-1790494977109-2kclol3",
+      "timestamp": 1790494977109,
+      "rawDisplayText": "按这里的回流建议更新一下对应的知识卡片",
+      "canonicalText": "按这里的回流建议更新一下对应的知识卡片",
+      "context": {
+        "editorSelection": {
+          "notePath": "05_Review/每周蒸馏/2026-09-25｜缩放规律验证与稀疏稠密混合召回.md",
+          "mode": "selection",
+          "selectedText": "回流建议",
+          "lineCount": 1,
+          "startLine": 58
+        }
+      },
+      "images": [],
+      "contentDigest": "63490a13bbfbc686bb1e1440a8d073c3a44efbcdaf6e1a9a9db4dc9b706f4c67",
+      "providerUserMessageId": "01a0e1d1-2ca4-7c21-ad3e-3f206201d3a7",
+      "providerAssistantMessageId": "msg_resp_20260927154707a551d993a34c4dda_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790495406599-waa5fo5",
+      "userTurnOrdinal": 11,
+      "state": "accepted",
+      "localMessageId": "msg-1790495406595-yw855wc",
+      "timestamp": 1790495406595,
+      "rawDisplayText": "输出一下语义ID技术路线对比，可以同时参考Clippings目录下的生成式推荐 Tokenization 最全综述报告 这篇笔记",
+      "canonicalText": "输出一下语义ID技术路线对比，可以同时参考Clippings目录下的生成式推荐 Tokenization 最全综述报告 这篇笔记",
+      "images": [],
+      "contentDigest": "03d0a7603bdf1fbd17c75fcd6ad217713db0d9ef9ccbde762ca9bacf82476912",
+      "providerUserMessageId": "01a0e1d7-ba34-78e3-9f57-fdf53b42d4f0",
+      "providerAssistantMessageId": "msg_resp_202609271553386ed102609c124707_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790502590791-92k8u2c",
+      "userTurnOrdinal": 12,
+      "state": "accepted",
+      "localMessageId": "msg-1790502590786-gt6kyyh",
+      "timestamp": 1790502590786,
+      "rawDisplayText": "RMSNorm pre-norm具体怎么做的",
+      "canonicalText": "RMSNorm pre-norm具体怎么做的",
+      "context": {
+        "editorSelection": {
+          "notePath": "02_Knowledge/模型与案例/OneTrans：一个Transformer统一特征交互与序列建模.md",
+          "mode": "selection",
+          "selectedText": "RMSNorm pre-norm",
+          "lineCount": 1,
+          "startLine": 63
+        }
+      },
+      "images": [],
+      "contentDigest": "57c8be1a127b8b71991a348ccbdc1e44db4278987105b97f187d16380f96771e",
+      "providerUserMessageId": "01a0e245-5981-7fb2-b2e1-7bf1cdb6707c",
+      "providerAssistantMessageId": "msg_resp_202609271750061b08f9649bef477c_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790503055348-vxnbsgq",
+      "userTurnOrdinal": 13,
+      "state": "accepted",
+      "localMessageId": "msg-1790503055344-738obch",
+      "timestamp": 1790503055344,
+      "rawDisplayText": "把这个补充到笔记中吧",
+      "canonicalText": "把这个补充到笔记中吧",
+      "context": {
+        "editorSelection": {
+          "notePath": "02_Knowledge/模型与案例/OneTrans：一个Transformer统一特征交互与序列建模.md",
+          "mode": "selection",
+          "selectedText": "RMSNorm pre-norm",
+          "lineCount": 1,
+          "startLine": 63
+        }
+      },
+      "images": [],
+      "contentDigest": "5bd0807c34b1e981a5aa3db97887dddecf856227130993e0e1ebe9c573fd223d",
+      "providerUserMessageId": "01a0e24c-701f-7910-8311-0f9b5a7cc21a",
+      "providerAssistantMessageId": "msg_resp_20260927175848c7896a3aaab04d9d_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790503602352-v0jhq5h",
+      "userTurnOrdinal": 14,
+      "state": "accepted",
+      "localMessageId": "msg-1790503602348-i2s08xs",
+      "timestamp": 1790503602348,
+      "rawDisplayText": "这个消融实验指的未优化是啥",
+      "canonicalText": "这个消融实验指的未优化是啥",
+      "context": {
+        "editorSelection": {
+          "notePath": "02_Knowledge/模型与案例/OneTrans：一个Transformer统一特征交互与序列建模.md",
+          "mode": "selection",
+          "selectedText": "相对未优化 OneTrans S，Pyramid 使训练运行时间 -28.7%",
+          "lineCount": 1,
+          "startLine": 139
+        }
+      },
+      "images": [],
+      "contentDigest": "eb79f440c0a30e100ab6ce0cf90104291076550e19bff3bc294cbb1109c5bd95",
+      "providerUserMessageId": "01a0e254-c8de-7721-81c7-846e15949e14",
+      "providerAssistantMessageId": "msg_resp_20260927180801e06ba88189274d6c_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790504324232-um0ltkp",
+      "userTurnOrdinal": 15,
+      "state": "accepted",
+      "localMessageId": "msg-1790504324227-zipp3e9",
+      "timestamp": 1790504324227,
+      "rawDisplayText": "这里的Causal Attention具体怎么做的，举例说明一下。query逐层递减，k，v都使用全序列？",
+      "canonicalText": "这里的Causal Attention具体怎么做的，举例说明一下。query逐层递减，k，v都使用全序列？",
+      "context": {
+        "editorSelection": {
+          "notePath": "02_Knowledge/模型与案例/OneTrans：一个Transformer统一特征交互与序列建模.md",
+          "mode": "selection",
+          "selectedText": "Causal Attention",
+          "lineCount": 1,
+          "startLine": 38
+        }
+      },
+      "images": [],
+      "contentDigest": "9efa761298d90f32c246f4b22eaf72761aa0b87579436d902faf6bf818779b99",
+      "providerUserMessageId": "01a0e25f-ccbc-7383-9706-48e004bc70f5",
+      "providerAssistantMessageId": "msg_resp_202609271818558e60c12513774ca5_1"
+    }
+  ]
+}

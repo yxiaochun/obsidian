@@ -1,0 +1,28 @@
+{
+  "id": "conv-1790411599655-1buxgikqa",
+  "providerId": "codex",
+  "title": "打招呼",
+  "titleGenerationStatus": "success",
+  "createdAt": 1790411599663,
+  "lastActivityAt": 1790504492985,
+  "sessionId": "01a0dcd8-efb2-7d40-9b77-f6ccb9082e01",
+  "selectedModel": "glm-5.3-flash",
+  "providerState": {
+    "threadId": "01a0dcd8-efb2-7d40-9b77-f6ccb9082e01",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yangxiaochun/.codex/sessions/2026/09/26/rollout-2026-09-26T16-33-19-01a0dcd8-efb2-7d40-9b77-f6ccb9082e01.jsonl",
+    "transcriptRootPath": "/Users/yangxiaochun/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "02_Knowledge/模型与案例/LONGER：全局token稳定超长行为序列建模.md",
+  "usage": {
+    "inputTokens": 169750,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 166208,
+    "contextWindow": 190000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 169750,
+    "percentage": 89,
+    "model": "glm-5.3-flash"
+  }
+}

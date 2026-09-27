@@ -1,0 +1,6 @@
+{
+  "note_title": "COBRA：稀疏ID引导稠密向量弥补生成式召回信息损失",
+  "one_line": "COBRA 先生成稀疏 semantic ID，再以该 ID 为条件端到端生成稠密向量，并用 BeamFusion 融合 beam 分数与最近邻分数完成粗到细的生成式召回。",
+  "card_path": "02_Knowledge/模型与案例/COBRA：稀疏ID引导稠密向量弥补生成式召回信息损失.md",
+  "index_registered": true
+}
