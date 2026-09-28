@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1790596236669-fggai705m",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790596236727-oyurthh",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1790596236650-xdwz5lg",
+      "timestamp": 1790596236650,
+      "rawDisplayText": "User-Item Decoupling 这里设计的动机是啥",
+      "canonicalText": "User-Item Decoupling 这里设计的动机是啥",
+      "context": {
+        "linkedContent": {
+          "path": "02_Knowledge/模型与案例/MixFormer：稠密特征与序列建模协同扩展.md"
+        },
+        "editorSelection": {
+          "notePath": "02_Knowledge/模型与案例/MixFormer：稠密特征与序列建模协同扩展.md",
+          "mode": "selection",
+          "selectedText": "User-Item Decoupling",
+          "lineCount": 1
+        }
+      },
+      "images": [],
+      "contentDigest": "14d17843f07ab4a22bb6a1eedb207027bb01053f530cbf943ea0b09824505b40",
+      "providerUserMessageId": "01a0e7da-47ee-7743-ba54-5be041aeb00f",
+      "providerAssistantMessageId": "msg_resp_20260928195045bfb08ca80de64a6f_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790598319475-9238ic4",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1790598319466-3xt8v3p",
+      "timestamp": 1790598319466,
+      "rawDisplayText": "这个单向信息流具体是怎么实现的，举例说明一下",
+      "canonicalText": "这个单向信息流具体是怎么实现的，举例说明一下",
+      "images": [],
+      "contentDigest": "05d68ee6b5ab7ab5784e6ab34aed6e8dd253f9601c79af66f66db553c7c45b47",
+      "providerUserMessageId": "01a0e7fa-0e27-74f1-93b2-8d30bce7cd0b",
+      "providerAssistantMessageId": "msg_resp_20260928202556956c26820df1486d_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790599408603-08gxpzr",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1790599408599-g3fsshw",
+      "timestamp": 1790599408599,
+      "rawDisplayText": "把这个整理到笔记上，并折叠起来",
+      "canonicalText": "把这个整理到笔记上，并折叠起来",
+      "images": [],
+      "contentDigest": "d2561ddd0a54bbb428f79ec9ae7c489fe2e85d0d7a29bc1d0a33d7bcae4148ab",
+      "providerUserMessageId": "01a0e80a-ac4d-76f1-8a24-13d8a3b28b87",
+      "providerAssistantMessageId": "msg_resp_202609282045203b9abe0e8d224663_1"
+    }
+  ]
+}

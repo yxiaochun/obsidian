@@ -49,27 +49,19 @@
       "discoveredModels": [
         {
           "model": "glm-5.3-flash",
-          "displayName": "GLM",
-          "description": "GLM",
+          "displayName": "GLM-5.2",
+          "description": "GLM-5.2",
           "supportedReasoningEfforts": [
             {
-              "value": "low",
-              "description": "Fast responses with lighter reasoning"
-            },
-            {
-              "value": "medium",
-              "description": "Balances speed and reasoning depth for everyday tasks"
+              "value": "none",
+              "description": "Disable Thinking"
             },
             {
               "value": "high",
               "description": "Greater reasoning depth for complex problems"
-            },
-            {
-              "value": "xhigh",
-              "description": "Extra high reasoning depth for complex problems"
             }
           ],
-          "defaultReasoningEffort": "medium",
+          "defaultReasoningEffort": "high",
           "serviceTiers": [],
           "defaultServiceTier": null,
           "inputModalities": [
@@ -86,8 +78,8 @@
       "enableUltraEffort": true,
       "reasoningSummary": "detailed",
       "environmentVariables": "",
-      "environmentHash": "runtime-input:v1:decaf2e9f2b8e6d193a7c85d6901e9f83cb199cd91b1e77a0332e8440095d3de",
-      "catalogTimestamp": 1790411599748,
+      "environmentHash": "runtime-input:v1:ed54f4f5238abeec7f65a5da1e468c9a639e157a7d1c7753b53f54ba1196e8a0",
+      "catalogTimestamp": 1790565920429,
       "catalogFingerprint": "2:ab762a88fe92d6c077f6d8cb12dd4c7b8b110ef216700e82515890813ad99181",
       "installationMethodsByHost": {},
       "wslDistroOverridesByHost": {}

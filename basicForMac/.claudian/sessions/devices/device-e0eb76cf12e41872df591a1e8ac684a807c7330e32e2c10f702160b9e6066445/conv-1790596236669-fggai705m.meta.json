@@ -1,0 +1,28 @@
+{
+  "id": "conv-1790596236669-fggai705m",
+  "providerId": "codex",
+  "title": "User-Item解耦设计动机解析",
+  "titleGenerationStatus": "success",
+  "createdAt": 1790596236695,
+  "lastActivityAt": 1790599531762,
+  "sessionId": "01a0e7da-463c-7362-999e-cd19eaf92134",
+  "selectedModel": "glm-5.3-flash",
+  "providerState": {
+    "threadId": "01a0e7da-463c-7362-999e-cd19eaf92134",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yangxiaochun/.codex/sessions/2026/09/28/rollout-2026-09-28T19-50-36-01a0e7da-463c-7362-999e-cd19eaf92134.jsonl",
+    "transcriptRootPath": "/Users/yangxiaochun/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "02_Knowledge/模型与案例/MixFormer：稠密特征与序列建模协同扩展.md",
+  "usage": {
+    "inputTokens": 26579,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 26304,
+    "contextWindow": 190000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 26579,
+    "percentage": 14,
+    "model": "glm-5.3-flash"
+  }
+}

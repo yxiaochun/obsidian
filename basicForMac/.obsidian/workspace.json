@@ -63,8 +63,7 @@
               "title": "超长行为序列建模的工程解法"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -220,11 +219,11 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1789645080525-zzp8mzp",
-                      "conversationId": "conv-1790411599655-1buxgikqa"
+                      "tabId": "tab-1790565920304-wrg1zp0",
+                      "conversationId": "conv-1790596236669-fggai705m"
                     }
                   ],
-                  "activeTabId": "tab-1789645080525-zzp8mzp"
+                  "activeTabId": "tab-1790565920304-wrg1zp0"
                 }
               },
               "icon": "bot",
@@ -240,8 +239,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-importer:导入笔记": false,
-      "md2wechat-publisher:公众号排版": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -250,13 +247,15 @@
       "command-palette:打开命令面板": false,
       "bases:新建数据库": false,
       "realclaudian:Open Claudian": false,
-      "feishu-lark-cli-sync:同步到飞书": false
+      "feishu-lark-cli-sync:同步到飞书": false,
+      "obsidian-importer:导入笔记": false,
+      "md2wechat-publisher:公众号排版": false
     }
   },
-  "active": "08cc91c307702439",
+  "active": "ad8c556d4ed14cd3",
   "lastOpenFiles": [
-    "02_Knowledge/模型与案例/OneTrans：一个Transformer统一特征交互与序列建模.md",
     "02_Knowledge/模型与案例/MixFormer：稠密特征与序列建模协同扩展.md",
+    "02_Knowledge/模型与案例/OneTrans：一个Transformer统一特征交互与序列建模.md",
     "99_Attachments/图片/MixFormer：稠密特征与序列建模协同扩展｜模型结构图.png",
     "01_Sources/论文报告/2026ByteDance_MixFormer.pdf",
     "99_Attachments/图片/OneTrans：一个Transformer统一特征交互与序列建模｜模型结构图.png",
