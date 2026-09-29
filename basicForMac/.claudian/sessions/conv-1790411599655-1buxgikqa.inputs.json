@@ -315,6 +315,86 @@
       "contentDigest": "9efa761298d90f32c246f4b22eaf72761aa0b87579436d902faf6bf818779b99",
       "providerUserMessageId": "01a0e25f-ccbc-7383-9706-48e004bc70f5",
       "providerAssistantMessageId": "msg_resp_202609271818558e60c12513774ca5_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790514919347-a657eyd",
+      "userTurnOrdinal": 16,
+      "state": "accepted",
+      "localMessageId": "msg-1790514919338-2wmnni2",
+      "timestamp": 1790514919338,
+      "rawDisplayText": "per-head SwiGLU FFN具体原理是啥",
+      "canonicalText": "per-head SwiGLU FFN具体原理是啥",
+      "context": {
+        "editorSelection": {
+          "notePath": "02_Knowledge/模型与案例/MixFormer：稠密特征与序列建模协同扩展.md",
+          "mode": "selection",
+          "selectedText": "per-head SwiGLU FFN",
+          "lineCount": 1
+        }
+      },
+      "images": [],
+      "contentDigest": "3956ba8b1cbcf441cd1c4e495c541e6083eebe582505c8f4ff4524f0aac931ef",
+      "providerUserMessageId": "01a0e301-77ff-71d0-94cd-305c9acc936f",
+      "providerAssistantMessageId": "msg_resp_20260927211834f94cffe3bae54cc0_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790515928058-tgo2xpz",
+      "userTurnOrdinal": 17,
+      "state": "accepted",
+      "localMessageId": "msg-1790515928054-3y028u1",
+      "timestamp": 1790515928054,
+      "rawDisplayText": "HeadMixing具体怎么做的，举个例子",
+      "canonicalText": "HeadMixing具体怎么做的，举个例子",
+      "context": {
+        "editorSelection": {
+          "notePath": "02_Knowledge/模型与案例/MixFormer：稠密特征与序列建模协同扩展.md",
+          "mode": "selection",
+          "selectedText": "HeadMixing",
+          "lineCount": 1
+        }
+      },
+      "images": [],
+      "contentDigest": "0bbe60dd66c46e05fc1e15906f19ab406cbb5b7abad3a77dd9e329413012bf4c",
+      "providerUserMessageId": "01a0e310-dc31-71e2-97bd-84b886166a5c",
+      "providerAssistantMessageId": "msg_resp_202609272132086cf8f0e603184b3a_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790517849773-kj59l5k",
+      "userTurnOrdinal": 18,
+      "state": "accepted",
+      "localMessageId": "msg-1790517849768-shr6lxy",
+      "timestamp": 1790517849768,
+      "rawDisplayText": "把这个加到笔记里吧",
+      "canonicalText": "把这个加到笔记里吧",
+      "context": {
+        "editorSelection": {
+          "notePath": "02_Knowledge/模型与案例/MixFormer：稠密特征与序列建模协同扩展.md",
+          "mode": "selection",
+          "selectedText": "HeadMixing",
+          "lineCount": 1
+        }
+      },
+      "images": [],
+      "contentDigest": "1f3d58d245ef9354618ff906a08e7a705547650ca1e339924641ba4a71be3c26",
+      "providerUserMessageId": "01a0e32e-2ee9-7a70-95c8-6966f51dd390",
+      "providerAssistantMessageId": "msg_resp_202609272205022af53d2d2cd14cef_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790517978086-i8413r5",
+      "userTurnOrdinal": 19,
+      "state": "accepted",
+      "localMessageId": "msg-1790517978082-fe1mv22",
+      "timestamp": 1790517978082,
+      "rawDisplayText": "这段内容能折叠起来吗",
+      "canonicalText": "这段内容能折叠起来吗",
+      "images": [],
+      "contentDigest": "cf60e2762b84b415820de7c79a5180a1978a80986ef578b632ad5221b624f029",
+      "providerUserMessageId": "01a0e330-240e-75e3-af9a-39593edd6c2c",
+      "providerAssistantMessageId": "msg_resp_20260927220717a890acb07269414c_1"
     }
   ]
 }

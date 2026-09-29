@@ -73,6 +73,53 @@ MixFormer 用单一参数空间的 Query Mixer、Cross Attention 和 Output Fusi
 - 随后每个 head 使用独立 SwiGLU FFN。作者认为推荐 query 来自用户、item、上下文等不同语义空间，且大量字段对应超大稀疏 ID 域，直接做内积相似度既不稳定又昂贵。
 - Figure 3 的消融显示：删除 HeadMixing 后 AUC 增益约下降 0.03%；把 HeadMixing 换成 SelfAttention 约为 +0.00%，但计算更贵；删除 Query Mixer 的 per-head FFN 约下降 0.04%。
 
+> [!example]- HeadMixing 的具体计算
+> 设 Query Mixer 的输入是 $X=[x_1,\dots,x_N]\in\mathbb{R}^{N\times D}$，其中 $N$ 是 head 数量，$D$ 是每个 head 的维度，且 $D$ 能被 $N$ 整除。HeadMixing 先对输入做 norm，再执行三步无参数坐标重排：
+>
+> $$
+> Y=\text{Flatten}\left(\text{Transpose}_{0,1}\left(\text{Reshape}(\text{Norm}(X),N,N,D/N)\right)\right)
+> $$
+>
+> 1. **Reshape**：把每个 head 的 $D$ 维通道平均切成 $N$ 个通道块，每块大小 $D/N$，得到 $N\times N\times D/N$。
+> 2. **Transpose**：交换第 1 维和第 2 维，也就是交换“原 head 编号”和“head 内部通道块编号”。
+> 3. **Flatten**：把结果压回 $N\times D$。新的第 $j$ 个 head 收集所有原 head 中第 $j$ 个通道块，因此实现了跨 head 信息交换。
+>
+> 最后加 residual：
+>
+> $$
+> P=Y+X
+> $$
+>
+> 这个操作没有可学习参数、相似度计算、softmax 或加权平均；它只是把不同 head 的通道块重新排列。跨 head 信息的非线性融合交给后续 per-head SwiGLU FFN 完成。
+>
+> **示例**：设 $N=3$，$D=6$，每个 head 切成 3 个大小为 2 的通道块：
+>
+> ```text
+> x1 = [a1,a2, b1,b2, c1,c2]
+> x2 = [d1,d2, e1,e2, f1,f2]
+> x3 = [g1,g2, h1,h2, i1,i2]
+> ```
+>
+> Reshape 成 $3\times3\times2$ 后：
+>
+> ```text
+> [
+>   [[a1,a2], [b1,b2], [c1,c2]],
+>   [[d1,d2], [e1,e2], [f1,f2]],
+>   [[g1,g2], [h1,h2], [i1,i2]]
+> ]
+> ```
+>
+> 交换前两维，再 flatten 回 $3\times6$：
+>
+> ```text
+> y1 = [a1,a2, d1,d2, g1,g2]
+> y2 = [b1,b2, e1,e2, h1,h2]
+> y3 = [c1,c2, f1,f2, i1,i2]
+> ```
+>
+> 也就是说，$y_1$ 收集 $x_1,x_2,x_3$ 的第 1 个通道块，$y_2$ 收集第 2 个通道块，$y_3$ 收集第 3 个通道块。随后再对 $y_i$ 加 residual 和 per-head FFN。
+
 ### Cross Attention
 
 - Query Mixer 的 $N$ 个输出 heads 直接作为 $N$ 个专用子查询，不需要额外的 Q 切分矩阵。
