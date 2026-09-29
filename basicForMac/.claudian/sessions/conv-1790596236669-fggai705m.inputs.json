@@ -54,6 +54,131 @@
       "contentDigest": "d2561ddd0a54bbb428f79ec9ae7c489fe2e85d0d7a29bc1d0a33d7bcae4148ab",
       "providerUserMessageId": "01a0e80a-ac4d-76f1-8a24-13d8a3b28b87",
       "providerAssistantMessageId": "msg_resp_202609282045203b9abe0e8d224663_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790653105714-lwmpzzb",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1790653105709-vgk4paf",
+      "timestamp": 1790653105709,
+      "rawDisplayText": "SwiGLU FFN和FFN的区别",
+      "canonicalText": "SwiGLU FFN和FFN的区别",
+      "context": {
+        "editorSelection": {
+          "notePath": "02_Knowledge/模型与案例/MixFormer：稠密特征与序列建模协同扩展.md",
+          "mode": "selection",
+          "selectedText": "SwiGLU FFN",
+          "lineCount": 1,
+          "startLine": 41
+        }
+      },
+      "images": [],
+      "contentDigest": "70f6fad465ae02f2d28fc36f71fff1d6ad559695feda13fb9187ee680cd495d0",
+      "providerUserMessageId": "01a0eb3e-06f5-7521-a71d-5bc8ee23d3dd",
+      "providerAssistantMessageId": "msg_resp_20260929113826d92956c1239a4950_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790653483397-wtbu8d5",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1790653483392-iijbioh",
+      "timestamp": 1790653483392,
+      "rawDisplayText": "把这个整理到笔记中吧，折叠起来",
+      "canonicalText": "把这个整理到笔记中吧，折叠起来",
+      "images": [],
+      "contentDigest": "b2f13c8c49d4d877bba13431a0910f13a8fabd1a77b80a97d867a3ee1d5c4cb4",
+      "providerUserMessageId": "01a0eb43-c9d0-7010-b011-15f36c24aba8",
+      "providerAssistantMessageId": "msg_resp_20260929114512d154bf4b732349ef_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790675010665-lxdbhhj",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "localMessageId": "msg-1790675010659-5en32fp",
+      "timestamp": 1790675010659,
+      "rawDisplayText": "这些分别指啥",
+      "canonicalText": "这些分别指啥",
+      "context": {
+        "editorSelection": {
+          "notePath": "04_Outputs/报告/语义ID技术路线对比｜初稿.md",
+          "mode": "selection",
+          "selectedText": "LazyAR、Value-aware Sequence Learning、RSPO 和 Dynamic Beam Search ",
+          "lineCount": 1,
+          "startLine": 89
+        }
+      },
+      "images": [],
+      "contentDigest": "c3b9f1540b0b375c8eaedd8d27d2b8c6cfd20060dac6aa7ccff926cc168d43d4",
+      "providerUserMessageId": "01a0ec8c-4565-7da3-9356-01c54fd25b9c",
+      "providerAssistantMessageId": "msg_resp_20260929174354e4761ad3bcfd4745_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790675250510-a1afh0c",
+      "userTurnOrdinal": 7,
+      "state": "accepted",
+      "localMessageId": "msg-1790675250504-wteuaa7",
+      "timestamp": 1790675250504,
+      "rawDisplayText": "修正一下",
+      "canonicalText": "修正一下",
+      "context": {
+        "editorSelection": {
+          "notePath": "04_Outputs/报告/语义ID技术路线对比｜初稿.md",
+          "mode": "selection",
+          "selectedText": "LazyAR、Value-aware Sequence Learning、RSPO 和 Dynamic Beam Search ",
+          "lineCount": 1,
+          "startLine": 89
+        }
+      },
+      "images": [],
+      "contentDigest": "4325f3e101a0dbc145e520cc3b4ec999e8a141a88c3d0e19b78d243acf5471c4",
+      "providerUserMessageId": "01a0ec8f-eda2-7c12-8f1c-c6458428e654",
+      "providerAssistantMessageId": "msg_resp_202609291747546e69b4f967524823_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790677566257-ztj28co",
+      "userTurnOrdinal": 8,
+      "state": "accepted",
+      "localMessageId": "msg-1790677566250-e7x5254",
+      "timestamp": 1790677566250,
+      "rawDisplayText": "RSPO，DPO和GRPO的原理，对比一下这三个方法",
+      "canonicalText": "RSPO，DPO和GRPO的原理，对比一下这三个方法",
+      "images": [],
+      "contentDigest": "65c918663a2479aaa7f196d671094a527cb8a67d8917517dde89da1e90415a0d",
+      "providerUserMessageId": "01a0ecb3-43f4-7073-8fe2-039b7beabdc0",
+      "providerAssistantMessageId": "msg_resp_20260929182709c55832277b024728_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790678031706-cwhf2kg",
+      "userTurnOrdinal": 9,
+      "state": "accepted",
+      "localMessageId": "msg-1790678031699-lhq8uw9",
+      "timestamp": 1790678031699,
+      "rawDisplayText": "举例说明一下GRPO具体怎么做的",
+      "canonicalText": "举例说明一下GRPO具体怎么做的",
+      "images": [],
+      "contentDigest": "9e53518436866c14f1e28b97d36c38c896a90cc643d0b77ac313dac584e5eda1",
+      "providerUserMessageId": "01a0ecba-5daf-7072-b42e-9e162a42f8e4",
+      "providerAssistantMessageId": "msg_resp_20260929183352d21b9daf3b84431d_1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790679617072-bv5og6x",
+      "userTurnOrdinal": 10,
+      "state": "accepted",
+      "localMessageId": "msg-1790679617062-zd6o0xd",
+      "timestamp": 1790679617062,
+      "rawDisplayText": "把以上对RSPO，DPO和GRPO的对比整理到一个笔记里吧",
+      "canonicalText": "把以上对RSPO，DPO和GRPO的对比整理到一个笔记里吧",
+      "images": [],
+      "contentDigest": "2a46acf8ee74a4d3332766ce9d9ea7b9d9b7c203d033ec8c2e66a47231130cf6",
+      "providerUserMessageId": "01a0ecd2-8eff-7480-a5e4-3e8d34827748",
+      "providerAssistantMessageId": "msg_resp_20260929190223fd1614ab547241c7_1"
     }
   ]
 }

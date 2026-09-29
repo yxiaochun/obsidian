@@ -1,6 +1,6 @@
 ---
 创建日期: 2026-09-15
-更新日期: 2026-09-28
+更新日期: 2026-09-29
 类型: 笔记
 标签:
   - 生成式推荐
@@ -39,6 +39,26 @@ MixFormer 用单一参数空间的 Query Mixer、Cross Attention 和 Output Fusi
 ![[MixFormer：稠密特征与序列建模协同扩展｜模型结构图.png]]
 
 图中主路径是 `Embedding & Split -> L 个 MixFormer block -> 多个 TaskNet`。每个 block 由 Query Mixer、Cross Attention 和 Output Fusion 组成：Query Mixer 对非序列特征切出的 N 个 heads 先做无参数 HeadMixing，再用 per-head SwiGLU FFN；Cross Attention 把这些 heads 作为专用子查询，对行为序列做多头检索；Output Fusion 用 per-head SwiGLU FFN 融合序列摘要与非序列语义。
+
+> [!info]- 概念补充：SwiGLU FFN 和标准 FFN 的区别
+> **标准 FFN**（Transformer 原版）：两步走，升维 → 激活 → 降维。
+> $$\text{FFN}(x)=W_2\cdot\text{ReLU}(W_1x)+b$$
+> `W₁` 把维度升到 4 倍，过激活函数后 `W₂` 压回，激活只作用在一条路径上。
+>
+> **SwiGLU FFN**：三条投影 + 门控相乘。
+> $$\text{SwiGLU}(x)=W_2\cdot(\text{Swish}(W_1x)\odot W_3x)$$
+> `W₁` 门控分支输出过 Swish（平滑版 ReLU，$x\cdot\sigma(x)$），`W₃` 值分支不加激活原样通过，两分支逐元素相乘 ⊙ 后由 `W₂` 投影回去。核心是**门控**：让网络自己学「哪些通道放行、放多少」，而不是 ReLU 那种固定的 0/正数非线性。
+>
+> | | 标准 FFN | SwiGLU FFN |
+> | --- | --- | --- |
+> | 结构 | 升维 → 激活 → 降维 | 双分支升维 → 门控相乘 → 降维 |
+> | 投影矩阵 | 2 个（W₁, W₂） | 3 个（W₁, W₂, W₃） |
+> | 参数对齐 | d_ff = 4d | 通常 d_ff = ⅔·4d，总参数量与标准 FFN 持平 |
+> | 效果 | 基线 | 同参数量下普遍更优（Shazeer 2020 GLU Variants） |
+>
+> 两点注意：
+> - **d_ff 为什么缩到 ⅔**：SwiGLU 多一个 W₃，若仍用 4d 中间维度，参数和计算量变成 1.5 倍；压到 ⅔·4d ≈ 2.67d 保证对比公平。门控提供乘性交互，Swish 处处可导、无 ReLU 死区，梯度回传更平滑，是 LLaMA / PaLM / MixFormer 等现代模型的默认选择。
+> - **MixFormer 语境**：per-head SwiGLU FFN 指每个 head 有独立的一套 SwiGLU FFN 参数（非共享）。消融显示换成 head-shared FFN 会掉点——per-head 参数保留了用户、item、上下文等异质特征子空间的独立性，对应论文的 head-level specialization 主张。
 
 ## 贡献列表
 

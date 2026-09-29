@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04_Outputs/报告/语义ID技术路线对比｜初稿.md",
+                "file": "02_Knowledge/概念卡片/DPO、GRPO、RSPO：从逐条偏好优化到列表级业务价值优化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "语义ID技术路线对比｜初稿"
+              "title": "DPO、GRPO、RSPO：从逐条偏好优化到列表级业务价值优化"
             }
           },
           {
@@ -28,7 +28,7 @@
               "type": "markdown",
               "state": {
                 "file": "02_Knowledge/模型与案例/MixFormer：稠密特征与序列建模协同扩展.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -42,7 +42,7 @@
               "type": "markdown",
               "state": {
                 "file": "02_Knowledge/模型与案例/OneTrans：一个Transformer统一特征交互与序列建模.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -254,12 +254,14 @@
   },
   "active": "ad8c556d4ed14cd3",
   "lastOpenFiles": [
+    "02_Knowledge/模型与案例/GR4AD：广告生成式推荐的架构训练推理联合设计.md",
+    "02_Knowledge/概念卡片/DPO、GRPO、RSPO：从逐条偏好优化到列表级业务价值优化.md",
+    "04_Outputs/报告/语义ID技术路线对比｜初稿.md",
     "02_Knowledge/模型与案例/MixFormer：稠密特征与序列建模协同扩展.md",
     "02_Knowledge/模型与案例/OneTrans：一个Transformer统一特征交互与序列建模.md",
     "99_Attachments/图片/MixFormer：稠密特征与序列建模协同扩展｜模型结构图.png",
     "01_Sources/论文报告/2026ByteDance_MixFormer.pdf",
     "99_Attachments/图片/OneTrans：一个Transformer统一特征交互与序列建模｜模型结构图.png",
-    "04_Outputs/报告/语义ID技术路线对比｜初稿.md",
     "04_Outputs/报告/推理成本如何约束生成式推荐扩展.md",
     "03_Topics/选题池/语义ID技术路线对比.md",
     "05_Review/每周蒸馏/2026-09-25｜缩放规律验证与稀疏稠密混合召回.md",
@@ -288,7 +290,6 @@
     "02_Knowledge/模型与案例/SORT：面向工业规模的排序Transformer系统优化.md",
     "02_Knowledge/模型与案例/MakeItLongKeepItFast：万级序列的线性复杂度建模.md",
     "02_Knowledge/模型与案例/HoMer：同质化Transformer统一序列与集合上下文.md",
-    "02_Knowledge/模型与案例/GRank：无结构索引的目标感知生成式检索.md",
     "06_Skills/论文精读重建/com.genrec.reintensive.plist",
     "06_Skills/论文精读重建/completed.txt",
     "06_Skills/论文精读重建/run.pid",
