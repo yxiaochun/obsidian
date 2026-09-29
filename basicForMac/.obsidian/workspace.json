@@ -255,6 +255,7 @@
   },
   "active": "08cc91c307702439",
   "lastOpenFiles": [
+    "02_Knowledge/概念卡片/DPO、GRPO、RSPO：从逐条偏好优化到列表级业务价值优化.md",
     "05_Review/每日简报/2026-09-26｜论文引文简报：GenRank大规模生成排序.md",
     "05_Review/每日简报/2026-09-27｜论文引文简报：SORT排序Transformer.md",
     "05_Review/每日简报/2026-09-28｜论文引文简报：LEMUR.md",
@@ -292,7 +293,6 @@
     "02_Knowledge/模型与案例/LEMUR：端到端多模态推荐替代两阶段表征.md",
     "Clippings",
     "02_Knowledge/模型与案例/SORT：面向工业规模的排序Transformer系统优化.md",
-    "02_Knowledge/模型与案例/MakeItLongKeepItFast：万级序列的线性复杂度建模.md",
     "06_Skills/论文精读重建/com.genrec.reintensive.plist",
     "06_Skills/论文精读重建/completed.txt",
     "06_Skills/论文精读重建/run.pid",

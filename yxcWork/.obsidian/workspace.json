@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Recsys/OneRec_论文精读笔记.md",
+                "file": "Recsys/RPMs_论文精读.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OneRec_论文精读笔记"
+              "title": "RPMs_论文精读"
             }
           }
         ]
@@ -213,8 +213,8 @@
   },
   "active": "7ebddd7f503a2eb4",
   "lastOpenFiles": [
-    "Recsys/OneRec_论文精读.md",
     "Recsys/OneRec_论文精读笔记.md",
+    "Recsys/OneRec_论文精读.md",
     "Recsys/DNA_论文精读.md",
     "Recsys/GReF_论文精读.md",
     "resume/自我介绍_完整版.md",

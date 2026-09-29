@@ -1,6 +1,6 @@
 ---
 创建日期: 2026-09-27
-更新日期: 2026-09-27
+更新日期: 2026-09-29
 类型: 文章
 标签:
   - 生成式推荐
@@ -86,7 +86,7 @@ PQ 把高维向量切成多个子空间，各子空间独立量化，因此 toke
 
 ### 1. 业务感知：GR4AD
 
-[[GR4AD：广告生成式推荐的架构训练推理联合设计]] 的 UA-SID 不是只编码内容语义，而是融合 MLLM 微调表征、共现学习、多粒度多分辨率 RQ-Kmeans 和末层哈希，使同一素材能按广告业务目标区分。LazyAR、Value-aware Sequence Learning、RSPO 和 Dynamic Beam Search 再把 SID 与广告收入、eCPM 和在线 QPS 对齐。
+[[GR4AD：广告生成式推荐的架构训练推理联合设计]] 的 UA-SID 不是只编码内容语义，而是融合 MLLM 微调表征、共现学习、多粒度多分辨率 RQ-Kmeans 和末层哈希，使同一素材能按广告业务目标区分。LazyAR、Value-Aware Supervised Learning（VSL）、RSPO 和 Dynamic Beam Serving（DBS）再把 SID 与广告收入、eCPM 和在线 QPS 对齐。
 
 实验口径显示，相对 DLRM 基线，OneRec-V2 带 +1.68% 广告收入；UVR + DBS 达 +4.32%；最终配置 UVR + DBS + LazyAR 达 +4.28%，同时相对 GR-Base 提升 +117% QPS。  
 

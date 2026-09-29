@@ -1,6 +1,6 @@
 ---
 创建日期: 2026-09-15
-更新日期: 2026-09-27
+更新日期: 2026-09-29
 类型: 笔记
 标签:
   - 生成式推荐
@@ -39,6 +39,26 @@ MixFormer 用单一参数空间的 Query Mixer、Cross Attention 和 Output Fusi
 ![[MixFormer：稠密特征与序列建模协同扩展｜模型结构图.png]]
 
 图中主路径是 `Embedding & Split -> L 个 MixFormer block -> 多个 TaskNet`。每个 block 由 Query Mixer、Cross Attention 和 Output Fusion 组成：Query Mixer 对非序列特征切出的 N 个 heads 先做无参数 HeadMixing，再用 per-head SwiGLU FFN；Cross Attention 把这些 heads 作为专用子查询，对行为序列做多头检索；Output Fusion 用 per-head SwiGLU FFN 融合序列摘要与非序列语义。
+
+> [!info]- 概念补充：SwiGLU FFN 和标准 FFN 的区别
+> **标准 FFN**（Transformer 原版）：两步走，升维 → 激活 → 降维。
+> $$\text{FFN}(x)=W_2\cdot\text{ReLU}(W_1x)+b$$
+> `W₁` 把维度升到 4 倍，过激活函数后 `W₂` 压回，激活只作用在一条路径上。
+>
+> **SwiGLU FFN**：三条投影 + 门控相乘。
+> $$\text{SwiGLU}(x)=W_2\cdot(\text{Swish}(W_1x)\odot W_3x)$$
+> `W₁` 门控分支输出过 Swish（平滑版 ReLU，$x\cdot\sigma(x)$），`W₃` 值分支不加激活原样通过，两分支逐元素相乘 ⊙ 后由 `W₂` 投影回去。核心是**门控**：让网络自己学「哪些通道放行、放多少」，而不是 ReLU 那种固定的 0/正数非线性。
+>
+> | | 标准 FFN | SwiGLU FFN |
+> | --- | --- | --- |
+> | 结构 | 升维 → 激活 → 降维 | 双分支升维 → 门控相乘 → 降维 |
+> | 投影矩阵 | 2 个（W₁, W₂） | 3 个（W₁, W₂, W₃） |
+> | 参数对齐 | d_ff = 4d | 通常 d_ff = ⅔·4d，总参数量与标准 FFN 持平 |
+> | 效果 | 基线 | 同参数量下普遍更优（Shazeer 2020 GLU Variants） |
+>
+> 两点注意：
+> - **d_ff 为什么缩到 ⅔**：SwiGLU 多一个 W₃，若仍用 4d 中间维度，参数和计算量变成 1.5 倍；压到 ⅔·4d ≈ 2.67d 保证对比公平。门控提供乘性交互，Swish 处处可导、无 ReLU 死区，梯度回传更平滑，是 LLaMA / PaLM / MixFormer 等现代模型的默认选择。
+> - **MixFormer 语境**：per-head SwiGLU FFN 指每个 head 有独立的一套 SwiGLU FFN 参数（非共享）。消融显示换成 head-shared FFN 会掉点——per-head 参数保留了用户、item、上下文等异质特征子空间的独立性，对应论文的 head-level specialization 主张。
 
 ## 贡献列表
 
@@ -141,6 +161,31 @@ MixFormer 用单一参数空间的 Query Mixer、Cross Attention 和 Output Fusi
 - 普通 HeadMixing 会让 user heads 混入 item 信息，因此无法请求级复用。UI-MixFormer 使用 mask 移除 user heads 中的 item-side 信号：
   $$\text{HeadMixing}_{\text{decouple}}(\cdot)=M\odot\text{HeadMixing}(\cdot)$$
 - 这仍然是单向 user-to-item 信息流：item heads 可以吸收 user heads 的信息，但 user heads 不吸收 item heads。因此同一请求内，user heads、用户行为序列以及 user-side cross attention 可以共享；item heads 和 item-side 输出仍按候选独立计算。
+
+> [!example]- 实现细节：单向信息流的 Mask 具体怎么做
+> 它不是 attention mask，而是作用在 HeadMixing 通道重排输出上的逐元素 0/1 矩阵（论文式 10-11）。
+>
+> **HeadMixing 的信息交换机制**：每个 head 的 D 维通道被切成 N 段（每段 D/N 维），reshape + 转置后，每个输出 head 等于「所有输入 head 各贡献一段」拼接而成。head 间交互就是交换通道段——这也是零参数的原因，但代价是输出 user head 会混入 item head 的通道段。
+>
+> **Mask 定义**：把 user heads 排在前面（head 0..N_U-1）、item heads 排在后面（head N_U..N-1），输出通道 j 所属的来源 head 可由 $s=\lfloor j/(D/N)\rfloor$ 反推：
+> $$M[i,j]=\begin{cases}0, & i<N_U \text{ 且 } j\ge N_U\cdot D/N \\ 1, & \text{otherwise}\end{cases}$$
+> 即 user 输出 head 中所有「来源是 item head」的通道段清零；item 输出 head 不动。最后 $\text{HeadMixing}_{\text{decouple}}=M\odot\text{HeadMixing}(\cdot)$。
+>
+> **具体例子**：设 N=4、N_U=N_G=2、D=8，每段 2 维。HeadMixing 转置后输出 head c = 所有输入 head 第 c 段依次拼接：
+> ```
+> 输出 head 1 = [u1¹ | u2¹ | g1¹ | g2¹]
+> 输出 head 2 = [u1² | u2² | g1² | g2²]
+> ```
+> 套 mask 后（N_U·D/N=4，user 输出 head 后 4 个通道清零）：
+> ```
+> 输出 head 1 = [u1¹ | u2¹ |  0  |  0 ]   ← 清掉来自 item 的段
+> 输出 head 2 = [u1² | u2² |  0  |  0 ]
+> ```
+> 对比：无 mask 时输出 head 1 = f(u1,u2,g1,g2)，g1/g2 随候选变化，user head 无法缓存；有 mask 后输出 head 1 只是 user heads 的函数，同一请求内所有候选计算结果相同，可算一次复用约 500 次。
+>
+> **为什么能贯穿所有层（闭包性质）**：每层 Query Mixer 都套同一 mask → user heads 永远只接收 user heads 的通道段；user heads 的 cross attention 查询请求级共享的用户行为序列，不含候选信息。归纳可得：第 L 层 user heads = f(初始 user 特征, 用户行为序列)，与候选完全无关。因此整个 U 分支（U-Query Mixer、U-Cross Attention、U-Output Fusion）每请求只算一次。
+>
+> **与双塔的区别**：双塔完全隔离、只靠最后打分交互；这里单向 = 切断 user←item（mask 实现），保留 user→item（item heads 的通道段明确包含 user heads 的段并逐层累积）。代价是 user 表征变为候选无关；论文报告离线四项指标与完整版完全一致，但 1:1 比例和隔离边界未做系统消融。
 
 ## 七问笔记
 
