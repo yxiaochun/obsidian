@@ -43,7 +43,7 @@
       "safeMode": "workspace-write",
       "cliPath": "",
       "cliPathsByHost": {
-        "device-5e10306bfea2fbac1f4364d35e01813ee7f0db99389f6d06b75b73fda8352c44": "/Applications/ChatGPT.app/Contents/Resources/codex"
+        "device-5e10306bfea2fbac1f4364d35e01813ee7f0db99389f6d06b75b73fda8352c44": "/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex"
       },
       "customModels": "",
       "discoveredModels": [
@@ -77,7 +77,7 @@
       ],
       "enableUltraEffort": true,
       "reasoningSummary": "detailed",
-      "environmentVariables": "",
+      "environmentVariables": "CODEX_HOME=/Users/yangxiaochun/Documents/obsidian/basicForMac/.claudian/codex-home",
       "environmentHash": "runtime-input:v1:ed54f4f5238abeec7f65a5da1e468c9a639e157a7d1c7753b53f54ba1196e8a0",
       "catalogTimestamp": 1790565920429,
       "catalogFingerprint": "2:ab762a88fe92d6c077f6d8cb12dd4c7b8b110ef216700e82515890813ad99181",

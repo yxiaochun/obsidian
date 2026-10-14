@@ -803,15 +803,3 @@ LC-Rec精心设计了多种对齐任务，以实现这一目标：
 \[22\] Guorui Zhou, Hengrui Hu, Hongtao Cheng, Huanjie Wang, Jiaxin Deng, Jinghao Zhang, Kuo Cai, Lejian Ren, Lu Ren, Liao Yu, et al. 2025. Onerec-v2 technical report. arXiv preprint arXiv:2508.20900 (2025).
 
 \[23\] Jieming Zhu, Mengqun Jin, Qijiong Liu, Zexuan Qiu, Zhenhua Dong, and Xiu Li. 2024. Cost: Contrastive quantization based semantic tokenization for generative recommendation. In Proceedings of the 18th ACM Conference on Recommender Systems. 969–974.
-
-还没有人送礼物，鼓励一下作者吧
-
-编辑于 2025-12-27 16:57・北京[生成式推荐](https://www.zhihu.com/topic/30592392)[维达PRO超厚韧厨房纸 厨房油污一抹干净](https://sugar.zhihu.com/glory_adreaper/glory_log?coi=0&pf=Mac+OS+X&ct=1&ar=0.0000&cc=110000&zr=0&bi=3940&cty=unknow&ui=39.157.116.214&lr=1&ut=1e4d3708746a4118832f0e747a72d0ea&ed=CjEEKVQqOStoVjtaBGd1BQ1zAHkVIW5wfQhmVlNmYQlSdgtnAXJtJH8TM1FUYXsDTSRDdwl1aHloRDsDDGF_All9AWxIKmdxeRBiUBczJQ1acwh5AHt8ITsYZFACYmpcHngAeQ1zaXR7AyIOVW1hAeWv3GG_POlz&src=brand&ts=1790409358&tue=AQENERpeSUELDR8URxhXCw1KBQEPVgoLBhEMAh1LV15SS0lPWkBIU15dSAYWFBb1XowihONxxQ%3D%3D)
-
-[
-
-维达PRO超厚韧厨房纸，3层加厚，湿用仍强韧，10倍吸油锁水，备餐清洁一张搞定。
-
-](https://sugar.zhihu.com/glory_adreaper/glory_log?coi=0&pf=Mac+OS+X&ct=1&ar=0.0000&cc=110000&zr=0&bi=3940&cty=unknow&ui=39.157.116.214&lr=1&ut=1e4d3708746a4118832f0e747a72d0ea&ed=CjEEKVQqOStoVjtaBGd1BQ1zAHkVIW5wfQhmVlNmYQlSdgtnAXJtJH8TM1FUYXsDTSRDdwl1aHloRDsDDGF_All9AWxIKmdxeRBiUBczJQ1acwh5AHt8ITsYZFACYmpcHngAeQ1zaXR7AyIOVW1hAeWv3GG_POlz&src=brand&ts=1790409358&tue=AQENERpeSUELDR8URxhXCw1KBQEPVgoLBhEMAh1LV15SS0lPWkBIU15dSAYWFBb1XowihONxxQ%3D%3D)
-
-赞同 83

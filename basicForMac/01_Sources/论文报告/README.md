@@ -1,6 +1,6 @@
 ---
 创建日期: 2026-09-17
-更新日期: 2026-09-17
+更新日期: 2026-10-14
 类型: 笔记
 标签:
   - 生成式推荐
@@ -54,6 +54,7 @@
 | [[2026ByteDance_TokenMixer-Large.pdf\|TokenMixer-Large]] | [[TokenMixer-Large：七十亿参数在线排序模型]] | 七十亿参数在线排序 | 已精读建卡 |
 | [[2026ByteDance_UGSep.pdf\|UGSep]] | [[UGSep：用户侧计算复用降低大模型推理成本]] | 用户侧计算复用与成本控制 | 已精读建卡 |
 | [[2025Meituan_UniROM.pdf\|UniROM]] | [[UniROM：广告排序的端到端统一生成架构]] | 广告排序端到端统一生成 | 已精读建卡 |
+| [[2021Alibaba_NeuralAuction.pdf\|DNA]] | [[DNA：可微分排序让拍卖机制进入端到端学习]] | 可微分排序端到端学习拍卖机制 | 已精读建卡 |
 
 ## 更新规则
 
