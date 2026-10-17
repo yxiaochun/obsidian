@@ -43,7 +43,7 @@
       "safeMode": "workspace-write",
       "cliPath": "",
       "cliPathsByHost": {
-        "device-5e10306bfea2fbac1f4364d35e01813ee7f0db99389f6d06b75b73fda8352c44": "/Applications/ChatGPT.app/Contents/Resources/codex"
+        "device-5e10306bfea2fbac1f4364d35e01813ee7f0db99389f6d06b75b73fda8352c44": "/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex"
       },
       "customModels": "",
       "discoveredModels": [

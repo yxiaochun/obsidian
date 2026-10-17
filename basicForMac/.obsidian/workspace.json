@@ -268,6 +268,8 @@
   },
   "active": "ad8c556d4ed14cd3",
   "lastOpenFiles": [
+    "02_Knowledge/模型与案例/DNA：可微分排序让拍卖机制进入端到端学习.md",
+    "01_Sources/论文报告/2021Alibaba_NeuralAuction.pdf",
     "05_Review/每周蒸馏/2026-10-17｜算力分配与广告机制成为双约束.md",
     "05_Review/每日简报/2026-10-17｜论文引文简报：OneTrans统一建模.md",
     "02_Knowledge/概念卡片/全站推广为什么排序计费分离仍需激励兼容.md",
@@ -293,7 +295,6 @@
     "02_Knowledge/模型与案例/MTmixAtt：自动token化与混合注意力的统一排序.md",
     "02_Knowledge/模型与案例/OneTrans：一个Transformer统一特征交互与序列建模.md",
     "02_Knowledge/模型与案例/OxygenREC：快慢思考让LLM推理进入电商推荐.md",
-    "02_Knowledge/模型与案例/PROMISE：过程奖励模型解锁推荐推理时扩展.md",
     "99_Attachments/图片/QARM：行为对齐和双路量化让多模态表征可训练｜模型结构图.png",
     "01_Sources/论文报告/ReferencesPDF/QARM Quantitative alignment multi-modal recommendation at Kuaishou.pdf",
     "99_Attachments/图片/MixFormer：稠密特征与序列建模协同扩展｜模型结构图.png",
@@ -309,7 +310,6 @@
     "06_Skills/论文精读重建/com.genrec.reintensive.plist",
     "06_Skills/论文精读重建/completed.txt",
     "06_Skills/论文精读重建/run.pid",
-    "06_Skills/论文精读重建/reintensive.log",
-    "06_Skills/论文精读重建/reintensive_existing_papers.sh"
+    "06_Skills/论文精读重建/reintensive.log"
   ]
 }

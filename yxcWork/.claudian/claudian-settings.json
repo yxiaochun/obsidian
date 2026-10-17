@@ -1,7 +1,7 @@
 {
   "userName": "",
-  "permissionMode": "yolo",
-  "model": "deepseek-v4-pro",
+  "permissionMode": "normal",
+  "model": "glm-5.3-flash",
   "thinkingBudget": "off",
   "effortLevel": "high",
   "serviceTier": "default",
@@ -50,68 +50,38 @@
       "customModels": "",
       "discoveredModels": [
         {
-          "model": "deepseek-v4-flash",
-          "displayName": "DeepSeek V4 Flash",
-          "description": "Latest frontier agentic coding model.",
+          "model": "glm-5.3-flash",
+          "displayName": "GLM-5.2",
+          "description": "GLM-5.2",
           "supportedReasoningEfforts": [
             {
-              "value": "low",
-              "description": "Fast responses with lighter reasoning"
+              "value": "none",
+              "description": "Disable Thinking"
             },
             {
               "value": "high",
-              "description": "Extra high reasoning depth for complex problems"
-            },
-            {
-              "value": "max",
-              "description": "Maximum reasoning depth for the hardest problems"
+              "description": "Greater reasoning depth for complex problems"
             }
           ],
           "defaultReasoningEffort": "high",
           "serviceTiers": [],
           "defaultServiceTier": null,
           "inputModalities": [
-            "text"
+            "text",
+            "image"
           ],
           "isDefault": true
-        },
-        {
-          "model": "deepseek-v4-pro",
-          "displayName": "DeepSeek V4 Pro",
-          "description": "Most capable frontier agentic coding model.",
-          "supportedReasoningEfforts": [
-            {
-              "value": "low",
-              "description": "Fast responses with lighter reasoning"
-            },
-            {
-              "value": "high",
-              "description": "Extra high reasoning depth for complex problems"
-            },
-            {
-              "value": "max",
-              "description": "Maximum reasoning depth for the hardest problems"
-            }
-          ],
-          "defaultReasoningEffort": "high",
-          "serviceTiers": [],
-          "defaultServiceTier": null,
-          "inputModalities": [
-            "text"
-          ],
-          "isDefault": false
         }
       ],
       "modelAliases": {},
       "visibleModels": [
-        "deepseek-v4-pro",
-        "deepseek-v4-flash"
+        "glm-5.3-flash"
       ],
       "enableUltraEffort": false,
       "reasoningSummary": "detailed",
       "environmentVariables": "",
       "environmentHash": "runtime-input:v1:ed54f4f5238abeec7f65a5da1e468c9a639e157a7d1c7753b53f54ba1196e8a0",
-      "catalogTimestamp": 1787843783612,
+      "catalogTimestamp": 1790565920429,
       "catalogFingerprint": "2:ab762a88fe92d6c077f6d8cb12dd4c7b8b110ef216700e82515890813ad99181",
       "installationMethodsByHost": {},
       "wslDistroOverridesByHost": {}
@@ -154,10 +124,13 @@
     }
   },
   "settingsProvider": "codex",
-  "lastSelectedChatModel": null,
+  "lastSelectedChatModel": {
+    "providerId": "codex",
+    "model": "glm-5.3-flash"
+  },
   "savedProviderModel": {
     "claude": "haiku",
-    "codex": "deepseek-v4-pro"
+    "codex": "glm-5.3-flash"
   },
   "savedProviderEffort": {
     "claude": "high",
@@ -167,7 +140,7 @@
   "savedProviderThinkingBudget": {},
   "savedProviderPermissionMode": {
     "claude": "yolo",
-    "codex": "yolo"
+    "codex": "normal"
   },
   "pendingProviderSessionInvalidations": {},
   "lastCustomModel": "",
