@@ -4,7 +4,7 @@
   "title": "业界全站推广中排序与计费分离机制",
   "titleGenerationStatus": "success",
   "createdAt": 1790411599663,
-  "lastActivityAt": 1792251106556,
+  "lastActivityAt": 1792334676317,
   "sessionId": "01a14a57-9039-7f72-822b-113f80775f36",
   "selectedModel": "glm-5.3-flash",
   "providerState": {
@@ -16,13 +16,13 @@
   },
   "linkedContentPath": "02_Knowledge/模型与案例/LONGER：全局token稳定超长行为序列建模.md",
   "usage": {
-    "inputTokens": 40740,
+    "inputTokens": 93335,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 40448,
+    "cacheReadInputTokens": 92672,
     "contextWindow": 190000,
     "contextWindowIsAuthoritative": true,
-    "contextTokens": 40740,
-    "percentage": 21,
+    "contextTokens": 93335,
+    "percentage": 49,
     "model": "glm-5.3-flash"
   }
 }
