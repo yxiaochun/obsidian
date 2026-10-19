@@ -251,8 +251,9 @@
       "feishu-lark-cli-sync:同步到飞书": false
     }
   },
-  "active": "2212d9307a494811",
+  "active": "1c0fe006d3592fbd",
   "lastOpenFiles": [
+    "05_Review/每日简报/2026-10-19｜论文引文简报：TokenMixer-Large.md",
     "02_Knowledge/模型与案例/CGA：自回归生成式拍卖捕捉排列级外部性并解耦分配与支付.md",
     "02_Knowledge/模型与案例/混排Re-Rank：影子出价把参与度约束转化为自然与广告流的统一排序货币.md",
     "01_Sources/论文报告/2021Alibaba_NeuralAuction.pdf",
@@ -297,7 +298,6 @@
     "05_Review/知识库优化记录/2026-09-17｜知识库编译式机制基线体检.md",
     "05_Review/每日简报/2026-10-11｜论文引文简报：MakeItLongKeepItFast.md",
     "05_Review/每周蒸馏/2026-10-09｜流式索引把语义ID推向对照复核.md",
-    "05_Review/每周蒸馏/2026-09-25｜缩放规律验证与稀疏稠密混合召回.md",
     "01_Sources/论文报告/ReferencesPDF/QARM Quantitative alignment multi-modal recommendation at Kuaishou.pdf"
   ]
 }
