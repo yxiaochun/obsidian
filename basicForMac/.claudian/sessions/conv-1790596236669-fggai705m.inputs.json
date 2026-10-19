@@ -267,6 +267,18 @@
       "canonicalText": "你好",
       "images": [],
       "contentDigest": "815b1925f3db319cfc8ef8cad8a91b3f8b512f630d8f82635cb105e93e666c2a"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1792396790947-nmiad35",
+      "userTurnOrdinal": 14,
+      "state": "staged",
+      "localMessageId": "msg-1792396790924-921rwa8",
+      "timestamp": 1792396790924,
+      "rawDisplayText": "你好",
+      "canonicalText": "你好",
+      "images": [],
+      "contentDigest": "815b1925f3db319cfc8ef8cad8a91b3f8b512f630d8f82635cb105e93e666c2a"
     }
   ]
 }
