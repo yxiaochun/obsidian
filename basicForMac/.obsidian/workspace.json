@@ -255,6 +255,7 @@
   },
   "active": "e517e2f3c84010d0",
   "lastOpenFiles": [
+    "03_Topics/选题池/广告混排方案对比：外部性建模、生成范式与计费机制的路线分化.md",
     "02_Knowledge/模型与案例/外卖搜索广告校准模型的LLM文本建模：双路transformer与三重loss对齐文本与ID表征.md",
     "99_Attachments/图片/km-2770912374/实验组午高峰耗时.png",
     "99_Attachments/图片/km-2770912374/基线午高峰耗时.png",
@@ -297,7 +298,6 @@
     "05_Review/每日简报/2026-10-09｜论文引文简报：MERGE 流式item索引.md",
     "05_Review/每日简报/2026-09-29｜论文引文简报：MDL.md",
     "05_Review/每日简报/2026-09-28｜论文引文简报：LEMUR.md",
-    "05_Review/每周蒸馏/2026-10-17｜算力分配与广告机制成为双约束.md",
     "01_Sources/论文报告/ReferencesPDF/QARM Quantitative alignment multi-modal recommendation at Kuaishou.pdf",
     "99_Attachments/图片/km-2791753276",
     "01_Sources/论文报告/2021Alibaba_NeuralAuction.pdf"
