@@ -53,12 +53,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Knowledge/模型与案例/混排Re-Rank：影子出价把参与度约束转化为自然与广告流的统一排序货币.md",
+                "file": "03_Topics/选题池/广告混排方案对比：外部性建模、生成范式与计费机制的路线分化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "混排Re-Rank：影子出价把参与度约束转化为自然与广告流的统一排序货币"
+              "title": "广告混排方案对比：外部性建模、生成范式与计费机制的路线分化"
             }
           }
         ],
@@ -251,8 +251,13 @@
       "feishu-lark-cli-sync:同步到飞书": false
     }
   },
-  "active": "1c0fe006d3592fbd",
+  "active": "2212d9307a494811",
   "lastOpenFiles": [
+    "02_Knowledge/模型与案例/LONGER：全局token稳定超长行为序列建模.md",
+    "03_Topics/选题池/广告混排方案对比：外部性建模、生成范式与计费机制的路线分化.md",
+    "03_Topics/选题池/混排影子价格的自适应路线与三层控制架构.md",
+    "02_Knowledge/概念卡片/Scaling Law在工业推荐系统的落地路径.md",
+    "02_Knowledge/模型与案例/混排Re-Rank：影子出价把参与度约束转化为自然与广告流的统一排序货币.md",
     "99_Attachments/图片/km-2770912374/混排整体训练流程图.svg",
     "99_Attachments/图片/km-2770912374/校准模型基线结构图.svg",
     "99_Attachments/图片/km-2770912374/校准模型LLM文本建模架构图.svg",
@@ -265,24 +270,19 @@
     "99_Attachments/图片/km-2753802603/基线整体拍卖流程图.svg",
     "99_Attachments/图片/km-2753802603/价格杠杆验证.png",
     "99_Attachments/图片/km-2753802603",
-    "99_Attachments/图片/km-2753762610/生成模型架构图.svg",
     "99_Attachments/图片/km-2753762610",
-    "03_Topics/选题池/混排影子价格的自适应路线与三层控制架构.md",
-    "03_Topics/选题池/广告混排方案对比：外部性建模、生成范式与计费机制的路线分化.md",
     "02_Knowledge/模型与案例/外卖搜索广告生成式混排一期：用自回归生成与DPO偏好对齐替代贪心混排.md",
     "02_Knowledge/模型与案例/外卖搜索广告校准模型的LLM文本建模：双路transformer与三重loss对齐文本与ID表征.md",
     "02_Knowledge/模型与案例/外卖列表广告生成式整体拍卖一期：用非自回归生成与RegretNet计费突破阶乘组合空间.md",
     "02_Knowledge/模型与案例/人群Agent加寻参Agent让混排影子价格从全局常数走向人群级自适应.md",
     "05_Review/每日简报/2026-10-19｜论文引文简报：TokenMixer-Large.md",
     "02_Knowledge/模型与案例/CGA：自回归生成式拍卖捕捉排列级外部性并解耦分配与支付.md",
-    "02_Knowledge/模型与案例/混排Re-Rank：影子出价把参与度约束转化为自然与广告流的统一排序货币.md",
     "01_Sources/论文报告/2021Alibaba_NeuralAuction.pdf",
     "01_Sources/论文报告/2020LinkedIn_Hunpai.pdf",
     "2020LinkedIn_Hunpai.pdf",
     "01_Sources/论文报告/2025Alibaba_CGA.pdf",
     "01_Sources/论文报告/2026LinkedIn.pdf",
     "01_Sources/论文报告/2026Xiaohongshu_LASER.pdf",
-    "02_Knowledge/模型与案例/LONGER：全局token稳定超长行为序列建模.md",
     "05_Review/每日简报/2026-10-18｜论文引文简报：TRM 语义Token替代Item ID.md",
     "03_Topics/混排技术路线梳理｜待办.md",
     "02_Knowledge/概念卡片/全站推广为什么排序计费分离仍需激励兼容.md",
@@ -297,7 +297,6 @@
     "02_Knowledge/概念卡片/超欠成本为何需要预估控制赔付三层机制协同解决.md",
     "02_Knowledge/概念卡片/全站推广计费为何仍以二价为主但规则正在分化.md",
     "05_Review/每日简报/2026-09-29｜论文引文简报：MDL.md",
-    "02_Knowledge/概念卡片/DPO、GRPO、RSPO：从逐条偏好优化到列表级业务价值优化.md",
-    "02_Knowledge/概念卡片/Scaling Law在工业推荐系统的落地路径.md"
+    "02_Knowledge/概念卡片/DPO、GRPO、RSPO：从逐条偏好优化到列表级业务价值优化.md"
   ]
 }
