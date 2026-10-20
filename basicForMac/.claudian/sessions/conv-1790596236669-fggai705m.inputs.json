@@ -279,6 +279,23 @@
       "canonicalText": "你好",
       "images": [],
       "contentDigest": "815b1925f3db319cfc8ef8cad8a91b3f8b512f630d8f82635cb105e93e666c2a"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1792485017985-ueowcrp",
+      "userTurnOrdinal": 1,
+      "state": "staged",
+      "localMessageId": "msg-1792485015492-enfl1cx",
+      "timestamp": 1792485015492,
+      "rawDisplayText": "你好",
+      "canonicalText": "你好",
+      "context": {
+        "linkedContent": {
+          "path": "02_Knowledge/模型与案例/MixFormer：稠密特征与序列建模协同扩展.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "815b1925f3db319cfc8ef8cad8a91b3f8b512f630d8f82635cb105e93e666c2a"
     }
   ]
 }

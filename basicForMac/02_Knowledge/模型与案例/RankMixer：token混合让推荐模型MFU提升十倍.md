@@ -1,6 +1,6 @@
 ---
 创建日期: 2026-09-15
-更新日期: 2026-09-26
+更新日期: 2026-10-20
 类型: 笔记
 标签:
   - 生成式推荐
@@ -36,10 +36,35 @@ RankMixer 用参数无关的 Multi-head Token Mixing 做跨特征交互，用 Pe
 ## 方法拆解
 
 - **Semantic tokenization**：不把每个字段都当作一个 token，而是先把用户画像、视频特征、序列特征和交叉特征等语义相近的 embedding 分组拼接，再切分并投影到固定维度 D，得到 T 个 feature token。这样避免数百个字段导致单 token 计算碎片化，也避免全部压缩成一个 token 后高频字段压制长尾字段。
-- **Multi-head Token Mixing**：每个 token 先分成 H 个 head；同一 head 下的 T 个向量拼接重组成 T 个新 token，随后做残差和 LayerNorm。作者设 H=T，使 token 数量不变。这个混合是参数无关的置换重组，因此能保持 Transformer 式高并行，同时避免自注意力的二次交互矩阵、显存读写和异质 ID 空间内积学习困难。
+- **Multi-head Token Mixing**：每个 token 先分成 H 个 head；**同一 head 序号下的 T 个片段拼接成 1 个新 token**，H 个 head 共产出 H 个新 token——这是一次纯重排（等价于乘一个置换矩阵），不引入任何参数。作者设 H=T，使新 token 的数量（T 个）和维度（每个 TD/H=D 维）都与输入一致，残差连接可以直接相加。混合本身不学习、交互强度不可调；把它参数化成可学习稀疏置换矩阵的后续工作见 [[UniMixer：把TokenMixer参数化成可学习稀疏置换矩阵统一三种推荐Scaling路线]]。
 - **Per-token FFN**：每个 token 使用一组两层独立 MLP，隐藏维度为 kD，激活为 GELU。与所有 token 共享一个 FFN 相比，它把参数按 token/特征子空间隔离，缓解高频字段主导；单 token 前向计算复杂度不变，但总参数量随 T 增长。
-- **SparseMoE**：Per-token FFN 可替换为 SparseMoE。传统 Top-k 路由对所有 token 一样分配预算，且专家数急剧增加后容易出现专家不均衡和 dying experts。RankMixer 采用 ReLU gate 加自适应 L1 正则，让高信息 token 激活更多专家；DTSI 在训练期用稠密路由保证专家获得梯度，在推理期切换到稀疏路由降低成本。
+- **SparseMoE**：Per-token FFN 可替换为 SparseMoE。与稠密版「参数按 token 隔离」不同，MoE 版是**全部 token 共享同一专家池**（每个 block 一套，层间不共享），保留的 Per-token 性质只是逐 token 门控——每个 token 用自己的门控分数 $G_{i,j}=\mathrm{ReLU}(h(s_i))$ 从共享专家里挑选激活子集（论文式 10 的 $e_{i,j}$ 记号易误读为每 token 一套专家，实际指专家 j 作用在 token i 上）。传统 Top-k 路由对所有 token 一样分配预算，且专家数急剧增加后容易出现专家不均衡和 dying experts。RankMixer 采用 ReLU gate 加自适应 L1 正则（惩罚 $\sum G_{i,j}$，λ 控制平均激活比例），让高信息 token 激活更多专家、激活数不固定；L1 稀疏化的直觉同 Lasso：L1 对每个门控分数的梯度是常数 λ，专家只有在边际任务收益 > λ 时门控才守得住正值，否则被压到 ReLU 的 0 点——是「彻底跳过不计算」的硬零而非单纯缩小，调大 λ 即抬高门槛、降低平均激活率（论文的 1/2、1/4、1/8 激活率即由此刻出）；DTSI 配两个路由器，训练期走 $h_{\text{train}}$ 稠密激活保证专家拿到梯度，推理期走被 L1 压稀疏的 $h_{\text{infer}}$ 降低成本。
 - **扩展方向**：稠密版本可用 T、D、L 和专家数 E 四个方向扩展。论文给出近似公式 `#Param ≈ 2kLTD²`、`FLOPs ≈ 4kLTD²`；100M 和 1B 配置分别为 D=768、T=16、L=2 和 D=1536、T=32、L=2。作者观察到总参数量主导质量，但更大的 D 会形成更大的 GEMM 形状并提高 MFU。
+
+### 走查示例：T=4、D=8 的一次 Token Mixing
+
+设语义 tokenization 后得到 4 个 token（用户画像 / 商品 / 行为序列 / 交叉统计），每个维度 D=8，按 H=T=4 切成 4 个 head，每个 head 2 维。记每个 token 为四个片段的拼接（论文把 head 理解为「低维特征子空间的投影视角」）：
+
+$$
+x_1=[a_1|b_1|c_1|d_1],\ x_2=[a_2|b_2|c_2|d_2],\ x_3=[a_3|b_3|c_3|d_3],\ x_4=[a_4|b_4|c_4|d_4]
+$$
+
+Token Mixing 只做重排（式 3–5），不引入任何参数：
+
+$$
+s_1=[a_1|a_2|a_3|a_4],\quad s_2=[b_1|b_2|b_3|b_4],\quad s_3=[c_1|c_2|c_3|c_4],\quad s_4=[d_1|d_2|d_3|d_4]
+$$
+
+逐条看这个变换做了什么：
+
+- **跨特征交互发生在拼接里**：新 token $s_1$ 同时含有用户、商品、行为、交叉四个来源各自的第 1 视角片段——任何一个 $s_h$ 都是「全体特征在某一个子空间上的合影」；
+- **信息被拆散但没有丢失**：旧 token $x_1$ 的四个片段分别去了 $s_1$–$s_4$；残差连接把原始 $x_1$ 加回来，LayerNorm 收尾（式 5），所以每个新 token = 原始自身 + 全局片段；
+- **真正的「学习」在下一步 Per-token FFN**：$\mathrm{FFN}_1$ 的独立参数处理 $s_1$，由于 $s_1$ 是四个 token 各一片的拼接，这组参数学到的变换天然是跨特征组合。反过来想：若去掉 mixing，$\mathrm{FFN}_t$ 只看得到 token $t$ 本身，跨特征交互无从谈起——这就是消融中移除 Token Mixing 掉 0.50% AUC 的原因；
+- **两层 block 叠加**：第一层输出的每个 token 已携带全局信息，第二层再做一次同样的重排 + FFN，得到更高阶的特征组合。
+
+真实配置走查（100M 版 T=16、D=768、H=16）：每个 token 切成 16 个 48 维 head，输入共 16×768=12288 个数；混合即第 h 个新 token = 16 个 token 各自第 h 个片段竖拼（16×48=768 维），实现上是 `reshape(16,16,48) → 交换 token/head 轴 → reshape 回 (16,768)` 的固定重排，零参数；残差按位置相加后 LayerNorm。**FFN 数量**：Per-token FFN 每个 block 配 16 个独立两层 MLP（768→kD→768，GELU），L=2 个 block 共 32 个 FFN——混合阶段 0 参数，参数全在 FFN 阶段；按每 FFN ≈ 2k·768² 计，32 个 ≈ 2kLTD² ≈ 37.7M·k，对照 107M 稠密参数反推 k≈3（论文未披露 k，推算）。SparseMoE 版把这 16 个独立 FFN 换成 E 个共享专家池 + ReLU gate 路由，DTSI 训练期稠密激活、推理期稀疏激活。1B 版 T=32、D=1536，每个 head 48 维、新 token = 32×48 = 1536 维。
+
+**与 attention 的一句话对照**：attention 的权重 $\alpha_{ij}$ 依赖内容（Q·K 内积），在异质 ID 空间里既难学又昂贵（消融中 Self-Attention 精度只差 0.03% 但 FLOPs +71.8%）；RankMixer 的混合是固定置换，内容无关、零参数，但每个 token 贡献哪一片、贡献多少**完全不学习**——这正是 UniMixer 批评并参数化的点。
 
 ## 实验证据
 
