@@ -253,6 +253,8 @@
   },
   "active": "1c0fe006d3592fbd",
   "lastOpenFiles": [
+    "03_Topics/选题池/混排技术演进路线：从影子价格到全链路生成式拍卖.md",
+    "05_Review/每日简报/2026-10-21｜论文引文简报：GR4AD.md",
     "Untitled.md",
     "Clippings/论文分享｜推荐系统的“Attention Moment”要来了？快手 UniMixer 重新思考推荐 Scaling Law.md",
     "03_Topics/选题池/排序骨干Scaling三代演化：RankMixer确立范式、TokenMixer-Large推向7B、UniMixer统一理论与表达力回归.md",
@@ -296,8 +298,6 @@
     "03_Topics/混排技术路线梳理｜待办.md",
     "02_Knowledge/概念卡片/全站推广为什么排序计费分离仍需激励兼容.md",
     "02_Knowledge/模型与案例/全站推广为什么从三家创新变成电商平台通用范式.md",
-    "02_Knowledge/模型与案例/美团到餐多位次NeuralAuction实验：逐坑位竞拍兼容多模版灵活位次.md",
-    "02_Knowledge/模型与案例/美团到餐gDNA一期实验：把自然候选当作零出价广告的整体拍卖混排.md",
-    "02_Knowledge/模型与案例/点评到餐NeuralAuction实验：用序特征实现计费调控并量化激励兼容代价.md"
+    "02_Knowledge/模型与案例/美团到餐多位次NeuralAuction实验：逐坑位竞拍兼容多模版灵活位次.md"
   ]
 }
