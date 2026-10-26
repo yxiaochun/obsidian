@@ -253,6 +253,7 @@
   },
   "active": "1c0fe006d3592fbd",
   "lastOpenFiles": [
+    "02_Knowledge/概念卡片/MMoE用任务私有门控路由共享专家缓解多任务冲突.md",
     "05_Review/每日简报/2026-10-26｜论文引文简报：Feed SR.md",
     "05_Review/每日简报/2026-10-25｜论文引文简报：UniMixer.md",
     "04_Outputs/报告/广告混排与生成式拍卖的机制路线对比｜初稿.md",
@@ -295,7 +296,6 @@
     "99_Attachments/图片/km-2753802603",
     "99_Attachments/图片/km-2753762610",
     "02_Knowledge/模型与案例/外卖搜索广告生成式混排一期：用自回归生成与DPO偏好对齐替代贪心混排.md",
-    "02_Knowledge/模型与案例/外卖搜索广告校准模型的LLM文本建模：双路transformer与三重loss对齐文本与ID表征.md",
     "01_Sources/论文报告/2021Alibaba_NeuralAuction.pdf",
     "01_Sources/论文报告/2020LinkedIn_Hunpai.pdf",
     "2020LinkedIn_Hunpai.pdf"
