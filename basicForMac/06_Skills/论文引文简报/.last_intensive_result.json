@@ -1,0 +1,6 @@
+{
+  "note_title": "KuaiFormer：用Next Action Prediction把工业召回变成实时多兴趣检索",
+  "one_line": "把短视频召回改为 Next Action Prediction，用多兴趣 query token、自适应历史压缩和 LogQ+label smoothing 训练实现快手实时大规模检索。",
+  "card_path": "/Users/yangxiaochun/Documents/obsidian/basicForMac/02_Knowledge/模型与案例/KuaiFormer：用Next Action Prediction把工业召回变成实时多兴趣检索.md",
+  "index_registered": true
+}
