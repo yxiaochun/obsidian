@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Knowledge/模型与案例/CGA：自回归生成式拍卖捕捉排列级外部性并解耦分配与支付.md",
+                "file": "02_Knowledge/概念卡片/DPO离线与GRPO在线：机制差异与生成式推荐中的选型.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CGA：自回归生成式拍卖捕捉排列级外部性并解耦分配与支付"
+              "title": "DPO离线与GRPO在线：机制差异与生成式推荐中的选型"
             }
           },
           {
@@ -123,7 +123,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 311.6687927246094
+    "width": 467.59765625
   },
   "right": {
     "id": "1328e4c3698c51f6",
@@ -256,6 +256,9 @@
   },
   "active": "e517e2f3c84010d0",
   "lastOpenFiles": [
+    "04_Outputs/报告/策略指标涨跌并存时如何判断推全：长期价值评估框架｜初稿.md",
+    "04_Outputs/报告/广告混排与生成式拍卖的机制路线对比｜初稿.md",
+    "02_Knowledge/模型与案例/CGA：自回归生成式拍卖捕捉排列级外部性并解耦分配与支付.md",
     "99_Attachments/图片/KuaiFormer：用Next Action Prediction把工业召回变成实时多兴趣检索｜模型结构图.png",
     "05_Review/每日简报/2026-10-26｜论文引文简报：Feed SR.md",
     "05_Review/每日简报/2026-10-25｜论文引文简报：UniMixer.md",
@@ -263,7 +266,6 @@
     "05_Review/每日简报/2026-10-23｜论文引文简报：OneMall.md",
     "05_Review/每日简报/2026-10-22｜论文引文简报：GRank.md",
     "05_Review/每周蒸馏/2026-10-23｜广告混排机制化与排序Scaling统一解释.md",
-    "04_Outputs/报告/广告混排与生成式拍卖的机制路线对比｜初稿.md",
     "02_Knowledge/模型与案例/KuaiFormer：用Next Action Prediction把工业召回变成实时多兴趣检索.md",
     "02_Knowledge/概念卡片/Uplift模型为什么预测增量而不是转化.md",
     "01_Sources/论文报告/ReferencesPDF/KuaiFormer Transformer-Based Retrieval at Kuaishou.pdf",
@@ -274,7 +276,6 @@
     "03_Topics/选题池/混排影子价格的自适应路线与三层控制架构.md",
     "03_Topics/混排技术路线梳理｜待办.md",
     "03_Topics/选题池/广告混排方案对比：外部性建模、生成范式与计费机制的路线分化.md",
-    "02_Knowledge/模型与案例/CGA：自回归生成式拍卖捕捉排列级外部性并解耦分配与支付.md",
     "02_Knowledge/模型与案例/外卖搜索广告生成式混排一期：用自回归生成与DPO偏好对齐替代贪心混排.md",
     "02_Knowledge/模型与案例/点评到餐NeuralAuction实验：用序特征实现计费调控并量化激励兼容代价.md",
     "04_Outputs/报告/语义ID技术路线对比｜初稿.md",
@@ -296,7 +297,6 @@
     "99_Attachments/图片/km-2753802603/评估器结构图.svg",
     "99_Attachments/图片/km-2753802603/生成器结构图.svg",
     "99_Attachments/图片/km-2753802603/生成式整体拍卖整体架构图.svg",
-    "99_Attachments/图片/km-2753802603/基线整体拍卖流程图.svg",
     "99_Attachments/图片/km-2753802603",
     "99_Attachments/图片/km-2753762610",
     "01_Sources/论文报告/2025Alibaba_CGA.pdf",
