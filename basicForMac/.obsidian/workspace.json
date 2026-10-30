@@ -267,6 +267,9 @@
   },
   "active": "1c0fe006d3592fbd",
   "lastOpenFiles": [
+    "99_Attachments/图片/帕累托前沿对比示例-M1vsM2.png",
+    "99_Attachments/图片/gen_pareto_front.py",
+    "04_Outputs/报告/策略指标涨跌并存时如何判断推全：长期价值评估框架｜初稿.md",
     "05_Review/每周蒸馏/2026-10-30｜混排证据升级与多场景专家分工.md",
     "05_Review/每日简报/2026-10-30｜论文引文简报：Foundation-Expert范式.md",
     "05_Review/每日简报/2026-10-29｜论文引文简报：MIRT.md",
@@ -293,8 +296,6 @@
     "Clippings/论文分享｜推荐系统的“Attention Moment”要来了？快手 UniMixer 重新思考推荐 Scaling Law.md",
     "03_Topics/选题池/排序骨干Scaling三代演化：RankMixer确立范式、TokenMixer-Large推向7B、UniMixer统一理论与表达力回归.md",
     "02_Knowledge/模型与案例/UniMixer：把TokenMixer参数化成可学习稀疏置换矩阵统一三种推荐Scaling路线.md",
-    "02_Knowledge/模型与案例/NGA：非自回归生成式拍卖用全局外部性兼顾效果与推理效率.md",
-    "02_Knowledge/模型与案例/MIRT：用maximal-in-range结构换取精确DSIC的whole-feed生成式拍卖.md",
     "01_Sources/论文报告/2026Meta_MIRT.pdf",
     "01_Sources/论文报告/2026Meituan_EGA-V2.pdf",
     "01_Sources/论文报告/2026Kuaishou_UniMixer.pdf",
@@ -311,7 +312,6 @@
     "99_Attachments/图片/km-2753802603",
     "99_Attachments/图片/km-2753762610",
     "01_Sources/论文报告/2021Alibaba_NeuralAuction.pdf",
-    "01_Sources/论文报告/2020LinkedIn_Hunpai.pdf",
-    "2020LinkedIn_Hunpai.pdf"
+    "01_Sources/论文报告/2020LinkedIn_Hunpai.pdf"
   ]
 }
