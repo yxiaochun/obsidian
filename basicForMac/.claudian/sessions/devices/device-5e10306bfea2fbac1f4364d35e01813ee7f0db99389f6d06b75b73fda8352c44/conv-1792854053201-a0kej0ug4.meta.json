@@ -1,28 +1,28 @@
 {
   "id": "conv-1792854053201-a0kej0ug4",
   "providerId": "codex",
-  "title": "广告混排与生成式拍卖机制路线对比",
+  "title": "Obsidian CLI 的开启方法",
   "titleGenerationStatus": "success",
   "createdAt": 1792854053247,
-  "lastActivityAt": 1792857423954,
-  "sessionId": "01a16e6d-d227-7f00-a0b6-dfaa45e87bdc",
+  "lastActivityAt": 1793117927621,
+  "sessionId": "01a178c7-66d5-7d61-a9de-9bfa5b0ba235",
   "selectedModel": "glm-5.3-flash",
   "providerState": {
-    "threadId": "01a16e6d-d227-7f00-a0b6-dfaa45e87bdc",
+    "threadId": "01a178c7-66d5-7d61-a9de-9bfa5b0ba235",
     "nativeConversationContextEstablished": true,
-    "sessionFilePath": "/Users/yangxiaochun/.codex/sessions/2026/10/24/rollout-2026-10-24T23-00-53-01a16e6d-d227-7f00-a0b6-dfaa45e87bdc.jsonl",
+    "sessionFilePath": "/Users/yangxiaochun/.codex/sessions/2026/10/26/rollout-2026-10-26T23-14-56-01a178c7-66d5-7d61-a9de-9bfa5b0ba235.jsonl",
     "transcriptRootPath": "/Users/yangxiaochun/.codex/sessions",
     "workspaceDependencyToolVersion": 1
   },
   "linkedContentPath": "05_Review/每周蒸馏/2026-10-23｜广告混排机制化与排序Scaling统一解释.md",
   "usage": {
-    "inputTokens": 65613,
+    "inputTokens": 52778,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 56768,
+    "cacheReadInputTokens": 52352,
     "contextWindow": 190000,
     "contextWindowIsAuthoritative": true,
-    "contextTokens": 65613,
-    "percentage": 35,
+    "contextTokens": 52778,
+    "percentage": 28,
     "model": "glm-5.3-flash"
   }
 }

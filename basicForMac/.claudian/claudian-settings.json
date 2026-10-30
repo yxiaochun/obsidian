@@ -86,8 +86,8 @@
       "enableUltraEffort": true,
       "reasoningSummary": "detailed",
       "environmentVariables": "",
-      "environmentHash": "runtime-input:v1:ed54f4f5238abeec7f65a5da1e468c9a639e157a7d1c7753b53f54ba1196e8a0",
-      "catalogTimestamp": 1792230820804,
+      "environmentHash": "runtime-input:v1:bf73568e9029c8f356aaa7d829592c926f4e2470052ca434e50ee0e0fa48aa9a",
+      "catalogTimestamp": 1793027602724,
       "catalogFingerprint": "2:ab762a88fe92d6c077f6d8cb12dd4c7b8b110ef216700e82515890813ad99181",
       "installationMethodsByHost": {},
       "wslDistroOverridesByHost": {}

@@ -5,15 +5,8 @@
   "titleGenerationStatus": "success",
   "createdAt": 1790411599663,
   "lastActivityAt": 1792422368145,
-  "sessionId": "01a14a57-9039-7f72-822b-113f80775f36",
+  "sessionId": null,
   "selectedModel": "glm-5.3-flash",
-  "providerState": {
-    "threadId": "01a14a57-9039-7f72-822b-113f80775f36",
-    "nativeConversationContextEstablished": true,
-    "sessionFilePath": "/Users/yangxiaochun/.codex/sessions/2026/10/17/rollout-2026-10-17T22-50-15-01a14a57-9039-7f72-822b-113f80775f36.jsonl",
-    "transcriptRootPath": "/Users/yangxiaochun/.codex/sessions",
-    "workspaceDependencyToolVersion": 1
-  },
   "linkedContentPath": "02_Knowledge/模型与案例/LONGER：全局token稳定超长行为序列建模.md",
   "usage": {
     "inputTokens": 98910,
