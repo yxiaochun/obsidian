@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Knowledge/概念卡片/DPO离线与GRPO在线：机制差异与生成式推荐中的选型.md",
+                "file": "02_Knowledge/模型与案例/LEMUR：端到端多模态推荐替代两阶段表征.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DPO离线与GRPO在线：机制差异与生成式推荐中的选型"
+              "title": "LEMUR：端到端多模态推荐替代两阶段表征"
             }
           },
           {
@@ -98,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "对比损失",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -119,7 +119,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -256,6 +257,12 @@
   },
   "active": "e517e2f3c84010d0",
   "lastOpenFiles": [
+    "02_Knowledge/概念卡片/DPO、GRPO、RSPO：从逐条偏好优化到列表级业务价值优化.md",
+    "02_Knowledge/模型与案例/OneMall：快手电商多场景统一生成式推荐.md",
+    "02_Knowledge/模型与案例/NGA：非自回归生成式拍卖用全局外部性兼顾效果与推理效率.md",
+    "02_Knowledge/概念卡片/DPO离线与GRPO在线：机制差异与生成式推荐中的选型.md",
+    "99_Attachments/图片/帕累托前沿对比示例-M1vsM2.png",
+    "99_Attachments/图片/gen_pareto_front.py",
     "04_Outputs/报告/策略指标涨跌并存时如何判断推全：长期价值评估框架｜初稿.md",
     "04_Outputs/报告/广告混排与生成式拍卖的机制路线对比｜初稿.md",
     "02_Knowledge/模型与案例/CGA：自回归生成式拍卖捕捉排列级外部性并解耦分配与支付.md",
@@ -280,10 +287,6 @@
     "02_Knowledge/模型与案例/点评到餐NeuralAuction实验：用序特征实现计费调控并量化激励兼容代价.md",
     "04_Outputs/报告/语义ID技术路线对比｜初稿.md",
     "02_Knowledge/模型与案例/DNA：可微分排序让拍卖机制进入端到端学习.md",
-    "02_Knowledge/模型与案例/美团到餐gDNA一期实验：把自然候选当作零出价广告的整体拍卖混排.md",
-    "02_Knowledge/模型与案例/美团到餐多位次NeuralAuction实验：逐坑位竞拍兼容多模版灵活位次.md",
-    "02_Knowledge/模型与案例/OneTrans：一个Transformer统一特征交互与序列建模.md",
-    "02_Knowledge/模型与案例/UniMixer：把TokenMixer参数化成可学习稀疏置换矩阵统一三种推荐Scaling路线.md",
     "01_Sources/论文报告/2026Kuaishou_UniMixer.pdf",
     "01_Sources/论文报告/2026Meta_MIRT.pdf",
     "01_Sources/论文报告/2026Meituan_EGA-V2.pdf",
@@ -296,11 +299,9 @@
     "99_Attachments/图片/km-2753802603/价格杠杆验证.png",
     "99_Attachments/图片/km-2753802603/评估器结构图.svg",
     "99_Attachments/图片/km-2753802603/生成器结构图.svg",
-    "99_Attachments/图片/km-2753802603/生成式整体拍卖整体架构图.svg",
     "99_Attachments/图片/km-2753802603",
     "99_Attachments/图片/km-2753762610",
     "01_Sources/论文报告/2025Alibaba_CGA.pdf",
-    "01_Sources/论文报告/2020LinkedIn_Hunpai.pdf",
-    "99_Attachments/图片/km-2791029005"
+    "01_Sources/论文报告/2020LinkedIn_Hunpai.pdf"
   ]
 }
