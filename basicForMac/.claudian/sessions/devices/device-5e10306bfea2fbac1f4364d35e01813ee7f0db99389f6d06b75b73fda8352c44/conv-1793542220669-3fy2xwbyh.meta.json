@@ -1,0 +1,27 @@
+{
+  "id": "conv-1793542220669-3fy2xwbyh",
+  "providerId": "codex",
+  "title": "知识库中uplift模型内容检索",
+  "titleGenerationStatus": "success",
+  "createdAt": 1793542220683,
+  "lastActivityAt": 1793542266532,
+  "sessionId": "01a19772-6c50-7301-b576-ff0e0109f6bc",
+  "selectedModel": "glm-5.3-flash",
+  "providerState": {
+    "threadId": "01a19772-6c50-7301-b576-ff0e0109f6bc",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yangxiaochun/.codex/sessions/2026/11/01/rollout-2026-11-01T22-10-20-01a19772-6c50-7301-b576-ff0e0109f6bc.jsonl",
+    "transcriptRootPath": "/Users/yangxiaochun/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "usage": {
+    "inputTokens": 17136,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 16832,
+    "contextWindow": 190000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 17136,
+    "percentage": 9,
+    "model": "glm-5.3-flash"
+  }
+}

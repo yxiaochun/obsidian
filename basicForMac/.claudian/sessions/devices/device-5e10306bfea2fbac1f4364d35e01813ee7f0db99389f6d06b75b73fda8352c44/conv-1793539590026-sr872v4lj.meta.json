@@ -1,0 +1,18 @@
+{
+  "id": "conv-1793539590026-sr872v4lj",
+  "providerId": "codex",
+  "title": "你好",
+  "titleGenerationStatus": "pending",
+  "createdAt": 1793539590035,
+  "lastActivityAt": 1793540371815,
+  "sessionId": "01a19756-3637-7cd2-a8fd-862417d06691",
+  "selectedModel": "glm-5.3-flash",
+  "providerState": {
+    "threadId": "01a19756-3637-7cd2-a8fd-862417d06691",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yangxiaochun/.codex/sessions/2026/11/01/rollout-2026-11-01T21-39-32-01a19756-3637-7cd2-a8fd-862417d06691.jsonl",
+    "transcriptRootPath": "/Users/yangxiaochun/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "05_Review/每日简报/2026-11-01｜论文引文简报：GPR广告生成式推荐.md"
+}

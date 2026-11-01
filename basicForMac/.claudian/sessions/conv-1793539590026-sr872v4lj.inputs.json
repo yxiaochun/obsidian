@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1793539590026-sr872v4lj",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1793539590115-037fxhr",
+      "userTurnOrdinal": 1,
+      "state": "staged",
+      "localMessageId": "msg-1793539590023-s7elv0p",
+      "timestamp": 1793539590023,
+      "rawDisplayText": "为什么最近两天的简报都是同样的内容，而且有重复的多篇笔记",
+      "canonicalText": "为什么最近两天的简报都是同样的内容，而且有重复的多篇笔记",
+      "context": {
+        "linkedContent": {
+          "path": "05_Review/每日简报/2026-11-01｜论文引文简报：GPR广告生成式推荐.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "4b9a9ac0da97f3a1b3ffd20286bff1885da0a80ffa633f0c9b74a1e8bb5fbb90"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1793540371847-v7hl8s1",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1793540371815-g63qmpz",
+      "timestamp": 1793540371815,
+      "rawDisplayText": "你好",
+      "canonicalText": "你好",
+      "context": {
+        "linkedContent": {
+          "path": "05_Review/每日简报/2026-11-01｜论文引文简报：GPR广告生成式推荐.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "815b1925f3db319cfc8ef8cad8a91b3f8b512f630d8f82635cb105e93e666c2a",
+      "providerUserMessageId": "01a19756-3858-7e00-917c-3415d67c56e9"
+    }
+  ]
+}

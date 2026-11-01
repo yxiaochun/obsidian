@@ -34,7 +34,7 @@ KNOWLEDGE_INDEX_FILE = VAULT_DIR / "02_Knowledge" / "README.md"
 REFERENCE_PDF_DIR = VAULT_DIR / "01_Sources" / "论文报告" / "ReferencesPDF"
 STATE_FILE = SKILL_DIR / "state.json"
 ENV_FILE = Path.home() / "Documents" / "Horizon" / ".env"
-CODEX_BIN = Path("/Applications/ChatGPT.app/Contents/Resources/codex")
+CODEX_BIN = Path("/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex")
 INTENSIVE_SKILL_FILE = Path(
     "/Users/yangxiaochun/Documents/obsidian/obsidian-skills/skills/intensive-paper-reading/SKILL.md"
 )
@@ -504,6 +504,8 @@ def format_note_with_obsidian_skill(note_path: Path) -> None:
             "--sandbox",
             "workspace-write",
             "--skip-git-repo-check",
+            "-c",
+            "model_reasoning_effort=low",
             "-C",
             str(VAULT_DIR),
             prompt,
@@ -572,6 +574,8 @@ def create_high_frequency_note(
             "--sandbox",
             "workspace-write",
             "--skip-git-repo-check",
+            "-c",
+            "model_reasoning_effort=low",
             "-C",
             str(VAULT_DIR),
             prompt,
@@ -692,6 +696,12 @@ def main() -> None:
         if args.date
         else datetime.now(tz).date()
     )
+    existing_briefs = sorted(
+        OUTPUT_DIR.glob(f"{target.isoformat()}｜论文引文简报：*.md")
+    )
+    if existing_briefs and not args.force:
+        print(f"Already exists: {existing_briefs[0].name}")
+        return
     source_paper = pick_pdf(target)
     note_titles = knowledge_note_titles()
     reference_index = build_reference_index()
@@ -744,11 +754,11 @@ def main() -> None:
 
     content = render_brief(target, source_paper, result, {"total": len(entries), "recent": len(recent)})
     output_path.write_text(content, encoding="utf-8")
-    format_note_with_obsidian_skill(output_path)
     STATE_FILE.write_text(
         json.dumps({"date": target.isoformat(), "paper": source_paper.name}, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
+    format_note_with_obsidian_skill(output_path)
     print(f"Created: {output_path}")
 
 

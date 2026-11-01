@@ -4,7 +4,7 @@
   "title": "Obsidian CLI 的开启方法",
   "titleGenerationStatus": "success",
   "createdAt": 1792854053247,
-  "lastActivityAt": 1793117927621,
+  "lastActivityAt": 1793409815963,
   "sessionId": "01a178c7-66d5-7d61-a9de-9bfa5b0ba235",
   "selectedModel": "glm-5.3-flash",
   "providerState": {
@@ -16,13 +16,13 @@
   },
   "linkedContentPath": "05_Review/每周蒸馏/2026-10-23｜广告混排机制化与排序Scaling统一解释.md",
   "usage": {
-    "inputTokens": 52778,
+    "inputTokens": 44707,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 52352,
+    "cacheReadInputTokens": 44224,
     "contextWindow": 190000,
     "contextWindowIsAuthoritative": true,
-    "contextTokens": 52778,
-    "percentage": 28,
+    "contextTokens": 44707,
+    "percentage": 24,
     "model": "glm-5.3-flash"
   }
 }

@@ -1,0 +1,18 @@
+{
+  "id": "conv-1793543551532-mweqcrrh5",
+  "providerId": "codex",
+  "title": "VCG式边际贡献的计算复杂度",
+  "titleGenerationStatus": "success",
+  "createdAt": 1793543551535,
+  "lastActivityAt": 1793543551535,
+  "sessionId": "01a19786-baaf-7901-a619-1f1f5c8bcca3",
+  "selectedModel": "glm-5.3-flash",
+  "providerState": {
+    "threadId": "01a19786-baaf-7901-a619-1f1f5c8bcca3",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yangxiaochun/.codex/sessions/2026/11/01/rollout-2026-11-01T22-32-31-01a19786-baaf-7901-a619-1f1f5c8bcca3.jsonl",
+    "transcriptRootPath": "/Users/yangxiaochun/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "03_Topics/选题池/非自回归混排生成器Loss设计的四条技术路线.md"
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1793543551532-mweqcrrh5",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1793543551559-rws1oiz",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1793543551528-fb0vkok",
+      "timestamp": 1793543551528,
+      "rawDisplayText": "VCG 式边际贡献感觉计算起来比较复杂",
+      "canonicalText": "VCG 式边际贡献感觉计算起来比较复杂",
+      "context": {
+        "linkedContent": {
+          "path": "03_Topics/选题池/非自回归混排生成器Loss设计的四条技术路线.md"
+        },
+        "editorSelection": {
+          "notePath": "03_Topics/选题池/非自回归混排生成器Loss设计的四条技术路线.md",
+          "mode": "selection",
+          "selectedText": "VCG 式边际贡献",
+          "lineCount": 1,
+          "startLine": 27
+        }
+      },
+      "images": [],
+      "contentDigest": "7c8f96a2c6eb32ab0d6c9b454ed9bd5310da437575eab770a3454b6e6476e0b0",
+      "providerUserMessageId": "01a19786-bc95-7102-9ac2-45ade3ccd920"
+    }
+  ]
+}

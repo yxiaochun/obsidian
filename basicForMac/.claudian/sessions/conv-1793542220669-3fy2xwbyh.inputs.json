@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1793542220669-3fy2xwbyh",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1793542220706-nyl2bgu",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1793542220664-quo8lcw",
+      "timestamp": 1793542220664,
+      "rawDisplayText": "知识库里是否有关于uplift模型的相关内容",
+      "canonicalText": "知识库里是否有关于uplift模型的相关内容",
+      "images": [],
+      "contentDigest": "9c5e8d11aaff41a37ca9babd6962be5d94ecda48951a50d6b7cb758b318560b6",
+      "providerUserMessageId": "01a19772-6e4c-7ea3-8166-091853ba2eef",
+      "providerAssistantMessageId": "msg_resp_20261101221053eb7874fcaaa74dad"
+    }
+  ]
+}
