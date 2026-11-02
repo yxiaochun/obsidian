@@ -1,6 +1,6 @@
 ---
 创建日期: 2026-10-16
-更新日期: 2026-10-17
+更新日期: 2026-11-02
 类型: 笔记
 标签:
   - 机制设计
@@ -42,6 +42,14 @@ rankscore = \min_{q}\max_{z}\left(e^{\delta_{qz}}\cdot ecpm + e^{\alpha_{qz}}\cd
 $$
 
 指数形式的参数保证恒为正，从而保证 bid 对 rankscore 的正向单调（价格杠杆）。分配保留 rankscore 排序框架实现 GSP，计费用 rankscore 网络的反函数以二价方式计算。
+
+> [!info] 「+ embedding」项的运算澄清（2026-11-02 讨论，AI 助手机制推演，非原文表述）
+> 公式中的 `+ embedding` 是示意图级别简写，矢量无法字面上与标量项相加，实际的相加发生在「矢量先被标量化」之后，有三种形态：
+> 1. **投影标量化**：set encoder 输出 h ∈ R^d 先过线性投影/MLP 得到标量贡献 s_emb = w_e^T h + b_e，再与 e^δ·ecpm 等标量项相加——rankscore 网络结构图中 x'_i 全部虚线连接终止在隐层节点上，即隐层内积完成矢量→标量压缩；
+> 2. **参数化路径**：embedding 不直接加分，而是生成排序公式参数（hour-aware 变体即此形态：softplus(dense(hour embedding)) → parameters ∈ (0,+∞)），上下文通过改写 ecpm/ctr 各项系数间接影响 rankscore，天然把影响约束在正系数内，更贴合「调控计费」意图；
+> 3. **最终上线版本无此问题**：聚合消融后采用无聚合结构，序特征直接拼进 x'_i 由网络第一层压缩，set encoder embedding 相加通路实际不存在，同时规避了跨 poi 共享 bid 上下文破坏激励兼容的风险。
+>
+> 标量化是机制硬约束：rankscore 必须是逐广告标量才能排序并求反函数算二价；设计上刻意区分两类项的单调性——e^param·bid 项对 bid 严格单调（保价格杠杆），embedding 贡献项自由形式（对 bid 可非单调，是压密度、调计费的黑盒自由度）。
 
 set encoder 结构图（φ1 两层 MLP 特征变换 → 上下文聚合 → 输出 embedding）与 rankscore 网络结构图：
 

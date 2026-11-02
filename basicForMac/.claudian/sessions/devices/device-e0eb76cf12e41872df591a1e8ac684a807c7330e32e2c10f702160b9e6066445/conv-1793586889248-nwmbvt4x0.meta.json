@@ -1,0 +1,11 @@
+{
+  "id": "conv-1793586889248-nwmbvt4x0",
+  "providerId": "codex",
+  "title": "你好",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1793586889348,
+  "lastActivityAt": 1793586889782,
+  "sessionId": null,
+  "selectedModel": "glm-5.3-flash",
+  "linkedContentPath": "03_Topics/选题池/非自回归混排生成器Loss设计的四条技术路线.md"
+}
