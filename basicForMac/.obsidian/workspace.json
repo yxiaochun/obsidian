@@ -242,6 +242,7 @@
   },
   "active": "f20da406b50756e6",
   "lastOpenFiles": [
+    "02_Knowledge/模型与案例/UGR：面向异构电商推荐的统一生成式排序.md",
     "02_Knowledge/模型与案例/混排Re-Rank：影子出价把参与度约束转化为自然与广告流的统一排序货币.md",
     "03_Topics/选题池/混排技术演进路线：从影子价格到全链路生成式拍卖.md",
     "05_Review/每周蒸馏/2026-10-23｜广告混排机制化与排序Scaling统一解释.md",
@@ -270,7 +271,6 @@
     "05_Review/每周蒸馏/2026-09-18｜生成式推荐转向算力预算下的架构选型.md",
     "99_Attachments/图片/帕累托前沿对比示例-M1vsM2.png",
     "99_Attachments/图片/gen_pareto_front.py",
-    "04_Outputs/报告/策略指标涨跌并存时如何判断推全：长期价值评估框架｜初稿.md",
     "99_Attachments/图片/KuaiFormer：用Next Action Prediction把工业召回变成实时多兴趣检索｜模型结构图.png",
     "01_Sources/论文报告/ReferencesPDF/KuaiFormer Transformer-Based Retrieval at Kuaishou.pdf",
     "01_Sources/论文报告/2026Meta_MIRT.pdf",
