@@ -58,11 +58,23 @@ $$H=\mathrm{RMSNorm}(E),\quad Q=HW_Q,\ \bar{K}=P_K(HW_K),\ \bar{V}=P_V(HW_V)$$
 
 $$A=\mathrm{softmax}\!\left(\frac{Q\bar{K}^{\top}}{\sqrt{d}}\right)\bar{V}$$
 
-$P_K,P_V\in\mathbb{R}^{r\times M}$ 是沿候选轴的可学习投影，生产 $r=8$。复杂度从 $O(M^2d)$ 降到 $O(Mrd)$，对候选数线性。**$H_C$ 全请求只算一次，解码全程复用**——候选间交互一次算完，解码每步只更新「候选此刻合不合适」（$u_t$ 随前缀变化，$h_i$ 不变）。
+每个候选的原始表示由特征与业务类型属性经共享接口映射到同一表示空间（原文式 3）：$e_i=\mathrm{Candidate\_Embed}_\theta(f_i,\tau_i)$，其中 $f_i$ 是候选特征（含候选侧预估/排序信号），$\tau_i$ 是业务类型属性。
+
+$P_K,P_V\in\mathbb{R}^{r\times M}$ 是沿候选轴的可学习投影，生产 $r=8$。复杂度从 $O(M^2d)$ 降到 $O(Mrd)$，对候选数线性。注意力输出后接残差与 FFN 子层，构成标准 transformer block，只是注意力换成候选轴压缩版（原文式 5）：
+
+$$E'=E+A,\quad H_C=E'+\mathrm{FFN}\!\left(\mathrm{RMSNorm}(E')\right)$$
+
+**$H_C$ 全请求只算一次，解码全程复用**——候选间交互一次算完，解码每步只更新「候选此刻合不合适」（$u_t$ 随前缀变化，$h_i$ 不变）。
 
 ### 3. 请求上下文编码器
 
-用户属性、请求上下文、多时间尺度历史行为序列 → Masked Self-Attention 聚合 → 压成**单个**请求上下文 token $H_x$。压成一个 token 的目的是让请求级条件全请求只编码一次，解码每步只对单 token 做 cross-attention。生产配置：1 层 attention、256 维、8 头。
+输入为 $X_{\mathrm{user}}$、$X_{\mathrm{context}}$、$X_{\mathrm{history}}$ 三路（原文式 2）：类别特征做 embedding，数值特征做变换与投影；多时间尺度历史行为按记录顺序展开成 item token（对历史行为物品独立编码，不复用候选表示）。
+
+$$H_x=\mathrm{Encoder}_{\theta}(X_{\mathrm{user}},X_{\mathrm{context}},X_{\mathrm{history}})$$
+
+结构为 1 层 Masked Self-Attention（8 头、256 维）+ 逐位置 FFN，每个子层 pre-norm 包裹（残差 + RMSNorm）；最后由**可学习的 token 轴投影**压成**单个**请求上下文 token $H_x\in\mathbb{R}^{1\times256}$。
+
+**编码器不接触候选集，与候选编码是并行分支**：$H_x$ 与 $H_C$ 各自全请求只算一次、在束搜索 $N$ 条路径间共享，只在解码器会合——cross-attention 用 $H_x$ 作 KV，已选候选的 $h_y$ 追加进 self-attention 序列。压成一个 token 的目的是让请求级条件全请求只编码一次，解码每步只对单 token 做 cross-attention，且请求级编码与候选集变化（补召回、广告主增减）解耦。代价是 $H_x$ 对「当前有哪些候选」完全无知，用户-候选交互全部推迟到解码阶段由 $u_t$ 与 $h_i$ 的打分建立。
 
 ### 4. 自回归解码器与打分头
 
