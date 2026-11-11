@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1793586889248-nwmbvt4x0",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1793586889771-fdihzrl",
+      "userTurnOrdinal": 1,
+      "state": "staged",
+      "localMessageId": "msg-1793586889241-4jrhc25",
+      "timestamp": 1793586889241,
+      "rawDisplayText": "你好",
+      "canonicalText": "你好",
+      "context": {
+        "linkedContent": {
+          "path": "03_Topics/选题池/非自回归混排生成器Loss设计的四条技术路线.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "815b1925f3db319cfc8ef8cad8a91b3f8b512f630d8f82635cb105e93e666c2a"
+    }
+  ]
+}

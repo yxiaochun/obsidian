@@ -227,6 +227,7 @@
   },
   "active": "88e65945621adee8",
   "lastOpenFiles": [
+    "02_Knowledge/模型与案例/UGR：面向异构电商推荐的统一生成式排序.md",
     "02_Knowledge/模型与案例/NAR4Rec：并行位置匹配与负反馈训练加速列表生成.md",
     "01_Sources/论文报告/2024Kuaishou_NAR4Rec.pdf",
     "02_Knowledge/模型与案例/GR4AD：广告生成式推荐的架构训练推理联合设计.md",
@@ -258,7 +259,6 @@
     "02_Knowledge/模型与案例/NGA：非自回归生成式拍卖用全局外部性兼顾效果与推理效率.md",
     "99_Attachments/图片/帕累托前沿对比示例-M1vsM2.png",
     "99_Attachments/图片/gen_pareto_front.py",
-    "04_Outputs/报告/策略指标涨跌并存时如何判断推全：长期价值评估框架｜初稿.md",
     "99_Attachments/图片/KuaiFormer：用Next Action Prediction把工业召回变成实时多兴趣检索｜模型结构图.png",
     "01_Sources/论文报告/ReferencesPDF/KuaiFormer Transformer-Based Retrieval at Kuaishou.pdf",
     "01_Sources/论文报告/2026Meta_MIRT.pdf",
