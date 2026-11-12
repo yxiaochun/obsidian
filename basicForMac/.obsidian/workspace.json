@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Knowledge/模型与案例/OneTrans-GSR：离线列表奖励驱动单个策略统一重排与混排.md",
+                "file": "02_Knowledge/模型与案例/UGR：面向异构电商推荐的统一生成式排序.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OneTrans-GSR：离线列表奖励驱动单个策略统一重排与混排"
+              "title": "UGR：面向异构电商推荐的统一生成式排序"
+            }
+          },
+          {
+            "id": "79771756baa1ab44",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02_Knowledge/概念卡片/DPO、GRPO、RSPO：从逐条偏好优化到列表级业务价值优化.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DPO、GRPO、RSPO：从逐条偏好优化到列表级业务价值优化"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -225,16 +239,18 @@
       "feishu-lark-cli-sync:同步到飞书": false
     }
   },
-  "active": "88e65945621adee8",
+  "active": "79771756baa1ab44",
   "lastOpenFiles": [
     "02_Knowledge/模型与案例/UGR：面向异构电商推荐的统一生成式排序.md",
+    "02_Knowledge/模型与案例/UGR：反馈加权与排列偏好学习统一多业务混排并兼容GSP.md",
+    "02_Knowledge/概念卡片/DPO、GRPO、RSPO：从逐条偏好优化到列表级业务价值优化.md",
+    "02_Knowledge/概念卡片/DPO离线与GRPO在线：机制差异与生成式推荐中的选型.md",
+    "02_Knowledge/模型与案例/OneTrans-GSR：离线列表奖励驱动单个策略统一重排与混排.md",
     "02_Knowledge/模型与案例/NAR4Rec：并行位置匹配与负反馈训练加速列表生成.md",
     "01_Sources/论文报告/2024Kuaishou_NAR4Rec.pdf",
     "02_Knowledge/模型与案例/GR4AD：广告生成式推荐的架构训练推理联合设计.md",
     "03_Topics/选题池/非自回归混排生成器Loss设计的四条技术路线.md",
-    "02_Knowledge/模型与案例/UGR：反馈加权与排列偏好学习统一多业务混排并兼容GSP.md",
     "01_Sources/论文报告/2026Alibaba_UGR.pdf",
-    "02_Knowledge/模型与案例/OneTrans-GSR：离线列表奖励驱动单个策略统一重排与混排.md",
     "01_Sources/论文报告/2026ByteDance_OneTrans-GSR.pdf",
     "04_Outputs/报告/2026-11-06｜生成式混排走向统一列表策略与约束解码｜初稿.md",
     "02_Knowledge/概念卡片/MMoE用任务私有门控路由共享专家缓解多任务冲突.md",
@@ -255,8 +271,6 @@
     "05_Review/每日简报/2026-11-01｜论文引文简报：GPR.md",
     "05_Review/每日简报/2026-10-31｜论文引文简报：GPR广告生成式推荐.md",
     "05_Review/每日简报/2026-10-31｜论文引文简报：GPR 广告生成式预训练.md",
-    "05_Review/每周蒸馏/2026-09-18｜生成式推荐转向算力预算下的架构选型.md",
-    "02_Knowledge/模型与案例/NGA：非自回归生成式拍卖用全局外部性兼顾效果与推理效率.md",
     "99_Attachments/图片/帕累托前沿对比示例-M1vsM2.png",
     "99_Attachments/图片/gen_pareto_front.py",
     "99_Attachments/图片/KuaiFormer：用Next Action Prediction把工业召回变成实时多兴趣检索｜模型结构图.png",
