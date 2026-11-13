@@ -239,8 +239,10 @@
       "feishu-lark-cli-sync:同步到飞书": false
     }
   },
-  "active": "79771756baa1ab44",
+  "active": "063a77e3ad658b41",
   "lastOpenFiles": [
+    "05_Review/每周蒸馏/2026-11-13｜并行生成的收益取决于监督与在线选优.md",
+    "05_Review/每日简报/2026-11-13｜论文引文简报：NAR4Rec.md",
     "02_Knowledge/模型与案例/UGR：面向异构电商推荐的统一生成式排序.md",
     "02_Knowledge/模型与案例/UGR：反馈加权与排列偏好学习统一多业务混排并兼容GSP.md",
     "02_Knowledge/概念卡片/DPO、GRPO、RSPO：从逐条偏好优化到列表级业务价值优化.md",
@@ -269,8 +271,6 @@
     "01_Sources/论文报告/2021Alibaba_NeuralAuction.pdf",
     "05_Review/每日简报/2026-11-01｜论文引文简报：GPR 广告统一生成式预训练.md",
     "05_Review/每日简报/2026-11-01｜论文引文简报：GPR.md",
-    "05_Review/每日简报/2026-10-31｜论文引文简报：GPR广告生成式推荐.md",
-    "05_Review/每日简报/2026-10-31｜论文引文简报：GPR 广告生成式预训练.md",
     "99_Attachments/图片/帕累托前沿对比示例-M1vsM2.png",
     "99_Attachments/图片/gen_pareto_front.py",
     "99_Attachments/图片/KuaiFormer：用Next Action Prediction把工业召回变成实时多兴趣检索｜模型结构图.png",
