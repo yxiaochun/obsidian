@@ -1,0 +1,6 @@
+{
+  "note_title": "NAR4Rec：并行位置匹配与效用负反馈实现低延迟生成式重排",
+  "one_line": "以并行候选—位置匹配、效用反似然和对比解码兼顾生成式重排效率与用户反馈。",
+  "card_path": "/Users/yangxiaochun/Documents/obsidian/basicForMac/02_Knowledge/模型与案例/NAR4Rec：并行位置匹配与效用负反馈实现低延迟生成式重排.md",
+  "index_registered": true
+}
