@@ -703,13 +703,29 @@ def main() -> None:
         print(f"Already exists: {existing_briefs[0].name}")
         return
     source_paper = pick_pdf(target)
+    # Skip papers with no eligible references instead of retrying the same
+    # historical paper forever. Keep the original rotation order.
+    pdfs = sorted(path for root in SOURCE_DIRS for path in root.glob("*.pdf"))
+    start = pdfs.index(source_paper)
+    skipped = []
+    for candidate in pdfs[start:] + pdfs[:start]:
+        try:
+            text = extract_pdf_text(candidate)
+            entries = parse_references(locate_references(text))
+            recent = recent_references(entries, target)
+        except (OSError, ValueError) as exc:
+            skipped.append({"paper": candidate.name, "reason": str(exc)})
+            continue
+        if recent:
+            source_paper = candidate
+            break
+        skipped.append({"paper": candidate.name, "reason": "No references within the last five years"})
+    else:
+        raise RuntimeError("No eligible references in any local paper")
     note_titles = knowledge_note_titles()
-    reference_index = build_reference_index()
-    text = extract_pdf_text(source_paper)
-    reference_text = locate_references(text)
-    entries = parse_references(reference_text)
-    recent = recent_references(entries, target)
-    recent = annotate_recent_references(recent, reference_index, note_titles)
+    if not args.dry_run:
+        reference_index = build_reference_index()
+        recent = annotate_recent_references(recent, reference_index, note_titles)
 
     if args.dry_run:
         print(
@@ -718,6 +734,7 @@ def main() -> None:
                     "date": target.isoformat(),
                     "paper": source_paper.name,
                     "references": len(entries),
+                    "skipped": skipped,
                     "recent": len(recent),
                     "sample": recent[:3],
                 },

@@ -1,10 +1,10 @@
 #!/bin/bash
 set -euo pipefail
 
-export PATH="/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:$PATH"
+export PATH="/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:$PATH"
 
 KB="/Users/yangxiaochun/Documents/obsidian/basicForMac"
-CODEX="/Applications/ChatGPT.app/Contents/Resources/codex"
+CODEX="/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex"
 PROMPT="$KB/06_Skills/每周蒸馏/weekly_distill_prompt.md"
 LOG_DIR="$HOME/Library/Application Support/GenRecOutputs"
 LOG_FILE="$LOG_DIR/weekly_distill.log"
