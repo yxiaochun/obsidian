@@ -1,11 +1,28 @@
 {
   "id": "conv-1793586889248-nwmbvt4x0",
   "providerId": "codex",
-  "title": "你好",
-  "titleGenerationStatus": "failed",
+  "title": "打招呼",
+  "titleGenerationStatus": "success",
   "createdAt": 1793586889348,
-  "lastActivityAt": 1793586889782,
-  "sessionId": null,
-  "selectedModel": "glm-5.3-flash",
-  "linkedContentPath": "03_Topics/选题池/非自回归混排生成器Loss设计的四条技术路线.md"
+  "lastActivityAt": 1795057399766,
+  "sessionId": "01a1f1c2-1d14-7fe3-bd8c-598be30c0fe8",
+  "selectedModel": "gpt-6.2-sol",
+  "providerState": {
+    "threadId": "01a1f1c2-1d14-7fe3-bd8c-598be30c0fe8",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yangxiaochun/.codex/sessions/2026/11/19/rollout-2026-11-19T11-03-13-01a1f1c2-1d14-7fe3-bd8c-598be30c0fe8.jsonl",
+    "transcriptRootPath": "/Users/yangxiaochun/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "03_Topics/选题池/非自回归混排生成器Loss设计的四条技术路线.md",
+  "usage": {
+    "inputTokens": 18262,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 475000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 18262,
+    "percentage": 4,
+    "model": "gpt-6.2-sol"
+  }
 }

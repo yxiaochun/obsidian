@@ -1,0 +1,28 @@
+{
+  "id": "conv-1795057686218-w8dkhjq5q",
+  "providerId": "codex",
+  "title": "细化原理并通俗讲解具体流程",
+  "titleGenerationStatus": "success",
+  "createdAt": 1795057686245,
+  "lastActivityAt": 1795074806222,
+  "sessionId": "01a1f1c6-97be-73f0-95cf-e0ba716708f6",
+  "selectedModel": "gpt-6.2-sol",
+  "providerState": {
+    "threadId": "01a1f1c6-97be-73f0-95cf-e0ba716708f6",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yangxiaochun/.codex/sessions/2026/11/19/rollout-2026-11-19T11-08-06-01a1f1c6-97be-73f0-95cf-e0ba716708f6.jsonl",
+    "transcriptRootPath": "/Users/yangxiaochun/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "04_Outputs/报告/TIGER用残差量化语义ID实现生成式召回.md",
+  "usage": {
+    "inputTokens": 135092,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 134272,
+    "contextWindow": 475000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 135092,
+    "percentage": 28,
+    "model": "gpt-6.2-sol"
+  }
+}

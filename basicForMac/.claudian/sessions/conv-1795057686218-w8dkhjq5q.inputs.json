@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1795057686218-w8dkhjq5q",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1795057686272-wh7bt1r",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1795057686211-esf0fog",
+      "timestamp": 1795057686211,
+      "rawDisplayText": "这里的原理说的还是不够清楚，能细化一下吗。并用通俗的语言描述一下具体流程",
+      "canonicalText": "这里的原理说的还是不够清楚，能细化一下吗。并用通俗的语言描述一下具体流程",
+      "context": {
+        "linkedContent": {
+          "path": "04_Outputs/报告/TIGER用残差量化语义ID实现生成式召回｜初稿.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "918339511d6958074c2bd0dabca8d14248d3d1842a432c8dfdc72cc1579c9d11",
+      "providerUserMessageId": "01a1f1c6-9866-71a2-aec0-2d3404eaf388",
+      "providerAssistantMessageId": "msg_02cc86afd954817e016afe68eab02c87d190c370ed251c2bda"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1795060276652-aziirgy",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1795060276646-k2xomlh",
+      "timestamp": 1795060276646,
+      "rawDisplayText": "三套独立码本，每套有 256 条 32 维向量，具体如何使用k-means做初始化",
+      "canonicalText": "三套独立码本，每套有 256 条 32 维向量，具体如何使用k-means做初始化",
+      "context": {
+        "editorSelection": {
+          "notePath": "04_Outputs/报告/TIGER用残差量化语义ID实现生成式召回｜初稿.md",
+          "mode": "selection",
+          "selectedText": "k-means",
+          "lineCount": 1,
+          "startLine": 76
+        }
+      },
+      "images": [],
+      "contentDigest": "8bdb88e01c51aaa1b5fbad571e3136fef2174181f3bb39733c1a3c3be86d38af",
+      "providerUserMessageId": "01a1f1ee-1df1-7532-baba-679870ccfae6",
+      "providerAssistantMessageId": "msg_02cc86afd954817e016afe72580f2487d1be9581ba6debda3d"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1795060626227-gd7zc3w",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1795060626220-omb5gll",
+      "timestamp": 1795060626220,
+      "rawDisplayText": "补到笔记里吧 折起来",
+      "canonicalText": "补到笔记里吧 折起来",
+      "context": {
+        "editorSelection": {
+          "notePath": "04_Outputs/报告/TIGER用残差量化语义ID实现生成式召回｜初稿.md",
+          "mode": "selection",
+          "selectedText": "k-means",
+          "lineCount": 1,
+          "startLine": 76
+        }
+      },
+      "images": [],
+      "contentDigest": "1ea6101386ce4cba5f6365230738fa09769c98b9c07724b7b73de8939833f9a3",
+      "providerUserMessageId": "01a1f1f3-7357-7911-ac1c-0c6806d71c67",
+      "providerAssistantMessageId": "msg_02cc86afd954817e016afe73c57ee087d1be36fe23ebe3827a"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1795060737352-dvq3btp",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1795060737347-igj7sw9",
+      "timestamp": 1795060737347,
+      "rawDisplayText": "k-means和训练怎么结合呢",
+      "canonicalText": "k-means和训练怎么结合呢",
+      "images": [],
+      "contentDigest": "2e488acfbad5218d3086ceea5167c4c046439f58e50869ac9a59b33d20c7d7fd",
+      "providerUserMessageId": "01a1f1f5-2551-7160-8a88-5b85be42baae",
+      "providerAssistantMessageId": "msg_02cc86afd954817e016afe741d114887d19dcb32ed8dccd488"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1795062346869-fg6hnvs",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1795062346857-tsn59uf",
+      "timestamp": 1795062346857,
+      "rawDisplayText": "k-means使用的编码器，是模型前期预训练输出的吗",
+      "canonicalText": "k-means使用的编码器，是模型前期预训练输出的吗",
+      "images": [],
+      "contentDigest": "f8d01819984c20f4007240ddce9f2f9651ba93ab621cd8b39c7b227582625635",
+      "providerUserMessageId": "01a1f20d-b4a0-7b73-a9b1-39ce5ce5457b",
+      "providerAssistantMessageId": "msg_02cc86afd954817e016afe7a5b589887d19a00c9c6779c315d"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1795062582577-p0q9pkn",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "localMessageId": "msg-1795062582568-zy4a5xb",
+      "timestamp": 1795062582568,
+      "rawDisplayText": "RQ-VAE 编码器怎么来的",
+      "canonicalText": "RQ-VAE 编码器怎么来的",
+      "images": [],
+      "contentDigest": "60ca0ec151b50d911f571d9dc59598ce4012303afbcea1962740e2e8d0650529",
+      "providerUserMessageId": "01a1f211-4d40-7a93-877e-02077310e69d",
+      "providerAssistantMessageId": "msg_02cc86afd954817e016afe7b40840087d18360431adf9d8f05"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1795072257769-cws4fzp",
+      "userTurnOrdinal": 7,
+      "state": "accepted",
+      "localMessageId": "msg-1795072257758-tklizoh",
+      "timestamp": 1795072257758,
+      "rawDisplayText": "将这些细节补充到笔记中吧",
+      "canonicalText": "将这些细节补充到笔记中吧",
+      "images": [],
+      "contentDigest": "0b41c8a1b227db2787c531709dc0a16ae3622700a251c624ccd8dee44f038143",
+      "providerUserMessageId": "01a1f2a4-ef3f-7f81-a0c2-6bfa7b42af7c",
+      "providerAssistantMessageId": "msg_02cc86afd954817e016afea14a268087d19a2eafb47c7af0b9"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1795074231556-gg6cvzk",
+      "userTurnOrdinal": 8,
+      "state": "accepted",
+      "localMessageId": "msg-1795074231544-o3kg1yk",
+      "timestamp": 1795074231544,
+      "rawDisplayText": "这个笔记已确认",
+      "canonicalText": "这个笔记已确认",
+      "images": [],
+      "contentDigest": "ace05162512644f0e0794f88b78aa6ef714f6654a7f79af9a393c2d052f42dcd",
+      "providerUserMessageId": "01a1f2c3-0d62-7c52-acd8-1f895613d815",
+      "providerAssistantMessageId": "msg_02cc86afd954817e016afea8f7251c87d1a0882703ac81ed05"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1795074438216-avl8rgi",
+      "userTurnOrdinal": 9,
+      "state": "accepted",
+      "localMessageId": "msg-1795074438211-dzc5ux3",
+      "timestamp": 1795074438211,
+      "rawDisplayText": "没找到在哪里启用CLI",
+      "canonicalText": "没找到在哪里启用CLI",
+      "images": [],
+      "contentDigest": "5d7125aeacbe0d13a5fc9fb101ac221c5af13bb84cc5e6589a5013b937b1c4b7",
+      "providerUserMessageId": "01a1f2c6-3451-7090-9128-fa17935d512e",
+      "providerAssistantMessageId": "msg_02cc86afd954817e016afea9f9656887d18f320087137c87fa"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1795074659896-xebxjej",
+      "userTurnOrdinal": 10,
+      "state": "accepted",
+      "localMessageId": "msg-1795074659379-qifu5bs",
+      "timestamp": 1795074659379,
+      "rawDisplayText": "可以了",
+      "canonicalText": "可以了",
+      "images": [],
+      "contentDigest": "337f6b5c9bb69cb322d643d14f45ca7c3bf904e0be778d8fc84a93bd38edaa9b",
+      "providerUserMessageId": "01a1f2c9-9b5f-75e2-9c01-b3b8672f1f9b",
+      "providerAssistantMessageId": "msg_0f19c95a4c503f6b016afeaaf5d23087d1a2f0ba584dae02d5"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "userName": "勋勋沐沐爸爸",
   "permissionMode": "yolo",
-  "model": "glm-5.3-flash",
+  "model": "gpt-6.2-sol",
   "thinkingBudget": "off",
   "effortLevel": "high",
   "serviceTier": "default",
@@ -43,14 +43,15 @@
       "safeMode": "workspace-write",
       "cliPath": "",
       "cliPathsByHost": {
-        "device-5e10306bfea2fbac1f4364d35e01813ee7f0db99389f6d06b75b73fda8352c44": "/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex"
+        "device-5e10306bfea2fbac1f4364d35e01813ee7f0db99389f6d06b75b73fda8352c44": "/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex",
+        "device-e0eb76cf12e41872df591a1e8ac684a807c7330e32e2c10f702160b9e6066445": "/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex"
       },
       "customModels": "",
       "discoveredModels": [
         {
-          "model": "gpt-6.1-sol",
-          "displayName": "GPT-6.1-Sol",
-          "description": "Latest workhorse model for coding and everyday work.",
+          "model": "gpt-6.2-sol",
+          "displayName": "GPT-6.2-Sol",
+          "description": "Fast, go-to model for coding and everyday work.",
           "supportedReasoningEfforts": [
             {
               "value": "low",
@@ -93,9 +94,9 @@
           "isDefault": true
         },
         {
-          "model": "gpt-6-astra",
-          "displayName": "GPT-6-Astra",
-          "description": "Frontier intelligence for the most demanding work.",
+          "model": "gpt-6.2-astra",
+          "displayName": "GPT-6.2-Astra",
+          "description": "Our most capable model for complex coding and professional work.",
           "supportedReasoningEfforts": [
             {
               "value": "low",
@@ -140,7 +141,7 @@
         {
           "model": "gpt-6.1-terra",
           "displayName": "GPT-6.1 Terra",
-          "description": "GPT-6.1 Terra Codex model.",
+          "description": "Efficient model that excels at visual understanding and computer use.",
           "supportedReasoningEfforts": [
             {
               "value": "low",
@@ -183,9 +184,99 @@
           "isDefault": false
         },
         {
+          "model": "gpt-6.1-sol",
+          "displayName": "GPT-6.1-Sol",
+          "description": "Previous generation model for coding and everyday work.",
+          "supportedReasoningEfforts": [
+            {
+              "value": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "value": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "value": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "value": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            },
+            {
+              "value": "max",
+              "description": "Maximum reasoning depth for the hardest problems"
+            },
+            {
+              "value": "ultra",
+              "description": "Maximum reasoning with automatic task delegation"
+            }
+          ],
+          "defaultReasoningEffort": "low",
+          "serviceTiers": [
+            {
+              "id": "priority",
+              "name": "Fast",
+              "description": "2x speed, increased usage"
+            }
+          ],
+          "defaultServiceTier": null,
+          "inputModalities": [
+            "text",
+            "image"
+          ],
+          "isDefault": false
+        },
+        {
+          "model": "gpt-6-astra",
+          "displayName": "GPT-6-Astra",
+          "description": "Previous generation model for complex coding and professional work.",
+          "supportedReasoningEfforts": [
+            {
+              "value": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "value": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "value": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "value": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            },
+            {
+              "value": "max",
+              "description": "Maximum reasoning depth for the hardest problems"
+            },
+            {
+              "value": "ultra",
+              "description": "Maximum reasoning with automatic task delegation"
+            }
+          ],
+          "defaultReasoningEffort": "low",
+          "serviceTiers": [
+            {
+              "id": "priority",
+              "name": "Fast",
+              "description": "2x speed, increased usage"
+            }
+          ],
+          "defaultServiceTier": null,
+          "inputModalities": [
+            "text",
+            "image"
+          ],
+          "isDefault": false
+        },
+        {
           "model": "gpt-6-sol",
           "displayName": "GPT-6-Sol",
-          "description": "Previous generation workhorse model.",
+          "description": "Legacy model for coding and everyday work.",
           "supportedReasoningEfforts": [
             {
               "value": "low",
@@ -271,7 +362,7 @@
         {
           "model": "gpt-5.6-sol",
           "displayName": "GPT-5.6-Sol",
-          "description": "Older generation workhorse model.",
+          "description": "Legacy model for coding and everyday work.",
           "supportedReasoningEfforts": [
             {
               "value": "low",
@@ -316,7 +407,7 @@
         {
           "model": "gpt-5.6-terra",
           "displayName": "GPT-5.6-Terra",
-          "description": "Older balanced model for straightforward work.",
+          "description": "Legacy balanced model for agentic coding.",
           "supportedReasoningEfforts": [
             {
               "value": "low",
@@ -361,7 +452,7 @@
         {
           "model": "gpt-5.6-luna",
           "displayName": "GPT-5.6-Luna",
-          "description": "Older fast and efficient model.",
+          "description": "Legacy fast model for simpler tasks.",
           "supportedReasoningEfforts": [
             {
               "value": "low",
@@ -401,12 +492,14 @@
         }
       ],
       "modelAliases": {},
-      "visibleModels": [],
+      "visibleModels": [
+        "gpt-6.2-sol"
+      ],
       "enableUltraEffort": true,
       "reasoningSummary": "detailed",
       "environmentVariables": "",
       "environmentHash": "runtime-input:v1:bf73568e9029c8f356aaa7d829592c926f4e2470052ca434e50ee0e0fa48aa9a",
-      "catalogTimestamp": 1794842033063,
+      "catalogTimestamp": 1795075081344,
       "catalogFingerprint": "2:dd26ac14c0de16ff8ca4b89dde9eda5cf8eca05589ca70395108f668e9fa34f0",
       "installationMethodsByHost": {},
       "wslDistroOverridesByHost": {}
@@ -449,18 +542,20 @@
   },
   "settingsProvider": "codex",
   "lastSelectedChatModel": {
-    "providerId": "claude",
-    "model": "opus"
+    "providerId": "codex",
+    "model": "glm-5.3-flash"
   },
   "savedProviderModel": {
     "claude": "haiku",
-    "codex": "glm-5.3-flash"
+    "codex": "gpt-6.2-sol"
   },
   "savedProviderEffort": {
     "claude": "high",
     "codex": "high"
   },
-  "savedProviderServiceTier": {},
+  "savedProviderServiceTier": {
+    "codex": "default"
+  },
   "savedProviderThinkingBudget": {},
   "savedProviderPermissionMode": {
     "claude": "normal",

@@ -6,7 +6,7 @@
   "createdAt": 1790596236695,
   "lastActivityAt": 1792485020777,
   "sessionId": null,
-  "selectedModel": "glm-5.3-flash",
+  "selectedModel": "gpt-6.2-sol",
   "linkedContentPath": "02_Knowledge/模型与案例/MixFormer：稠密特征与序列建模协同扩展.md",
   "usage": {
     "inputTokens": 81448,

@@ -18,6 +18,25 @@
       },
       "images": [],
       "contentDigest": "815b1925f3db319cfc8ef8cad8a91b3f8b512f630d8f82635cb105e93e666c2a"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1795057392703-yvrhq6q",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1795057392677-fr7b8a8",
+      "timestamp": 1795057392677,
+      "rawDisplayText": "你好",
+      "canonicalText": "你好",
+      "context": {
+        "linkedContent": {
+          "path": "03_Topics/选题池/非自回归混排生成器Loss设计的四条技术路线.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "815b1925f3db319cfc8ef8cad8a91b3f8b512f630d8f82635cb105e93e666c2a",
+      "providerUserMessageId": "01a1f1c2-2a5a-7970-952f-a749f64162ee",
+      "providerAssistantMessageId": "msg_0ee2df6ebb9ae6e7016afe66f5f14087d18e442d9bc2ba17a0"
     }
   ]
 }

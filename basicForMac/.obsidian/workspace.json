@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/抖音广告&电商LONGER无GSU的End2End长序列建模.md",
+                "file": "02_Knowledge/模型与案例/DeGRe：离线束搜索蒸馏支持在线贪心重排.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "抖音广告&电商LONGER无GSU的End2End长序列建模"
+              "title": "DeGRe：离线束搜索蒸馏支持在线贪心重排"
             }
           }
         ],
@@ -109,7 +109,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 419.8555603027344
+    "width": 387.51953125
   },
   "right": {
     "id": "1328e4c3698c51f6",
@@ -207,7 +207,8 @@
                   "openTabs": [
                     {
                       "tabId": "tab-1793586849867-8gejdpw",
-                      "conversationId": "conv-1793586889248-nwmbvt4x0"
+                      "conversationId": null,
+                      "draftModel": "gpt-6.2-sol"
                     }
                   ],
                   "activeTabId": "tab-1793586849867-8gejdpw"
@@ -242,38 +243,39 @@
   },
   "active": "f20da406b50756e6",
   "lastOpenFiles": [
+    "02_Knowledge/模型与案例/NAR4Rec：并行位置匹配与效用负反馈实现低延迟生成式重排.md",
+    "03_Topics/选题池/生成式排序方案对比.md",
+    "归档/NAR4Rec：并行位置匹配与负反馈训练加速列表生成.md",
+    "02_Knowledge/模型与案例/NAR4Rec：并行位置匹配与负反馈训练加速列表生成.md",
+    "02_Knowledge/模型与案例/MTGR：保留交叉特征的工业级生成式推荐扩展.md",
+    "02_Knowledge/模型与案例/MTGenRec：面向美团生成式推荐模型的高效分布式训练系统——动态哈希嵌入表、两阶段ID去重与动态序列批处理.md",
+    "02_Knowledge/模型与案例/NGA：非自回归生成式拍卖用全局外部性兼顾效果与推理效率.md",
+    "02_Knowledge/模型与案例/MIAA：用整页外部性联合决定广告胜出、位置与计费.md",
+    "02_Knowledge/README.md",
+    "04_Outputs/文章/广告混排面试题库｜初稿.md",
+    "04_Outputs/报告/Recall与NDCG必须结合候选范围评估生成式推荐｜初稿.md",
+    "04_Outputs/文章/2026-11-12｜算法面试复盘：AUC、优化器与多目标梯度隔离｜初稿.md",
+    "04_Outputs/报告/多场景统一生成式推荐的架构对比｜初稿.md",
+    "04_Outputs/报告/约束BeamSearch用前缀树生成合法商品并保留搜索分数口径｜初稿.md",
+    "04_Outputs/报告/语义ID技术路线对比｜初稿.md",
+    "04_Outputs/报告/GRPO用组内相对奖励优化生成式推荐策略｜初稿 1.md",
+    "04_Outputs/报告/DPO通过参考模型概率比直接学习推荐偏好｜初稿.md",
+    "04_Outputs/报告/GRPO用组内相对奖励优化生成式推荐策略｜初稿.md",
+    "04_Outputs/报告/TIGER用残差量化语义ID实现生成式召回.md",
+    "04_Outputs/报告/2026-11-06｜生成式混排走向统一列表策略与约束解码｜初稿.md",
+    "04_Outputs/报告/策略指标涨跌并存时如何判断推全：长期价值评估框架｜初稿.md",
+    "04_Outputs/报告/广告混排与生成式拍卖的机制路线对比｜初稿.md",
+    "04_Outputs/报告/推理成本如何约束生成式推荐扩展.md",
+    "02_Knowledge/模型与案例/DeGRe：离线束搜索蒸馏支持在线贪心重排.md",
+    "02_Knowledge/模型与案例/RankMixer：token混合让推荐模型MFU提升十倍.md",
+    "05_Review/每周蒸馏/2026-11-13｜并行生成的收益取决于监督与在线选优.md",
     "99_Attachments/图片/NAR4Rec：并行位置匹配与效用负反馈实现低延迟生成式重排｜模型结构图.png",
     "99_Attachments/图片/DHEN通过异构交互的分层集成扩展点击率预测能力｜模型结构图.png",
-    "05_Review/每日简报/2026-11-17｜论文引文简报：OxygenREC.md",
-    "05_Review/每日简报/2026-11-16｜论文引文简报：RankMixer.md",
-    "05_Review/每日简报/2026-11-15｜论文引文简报：LONGER.md",
-    "05_Review/每日简报/2026-11-14｜论文引文简报：CGA.md",
-    "05_Review/每日简报/2026-11-13｜论文引文简报：NAR4Rec.md",
-    "05_Review/每日简报/2026-11-02｜论文引文简报：LASER长序列建模.md",
-    "05_Review/每周蒸馏/2026-11-13｜并行生成的收益取决于监督与在线选优.md",
-    "04_Outputs/报告/多场景统一生成式推荐的架构对比｜初稿.md",
-    "04_Outputs/报告/2026-11-06｜生成式混排走向统一列表策略与约束解码｜初稿.md",
-    "02_Knowledge/模型与案例/UGR：反馈加权与排列偏好学习统一多业务混排并兼容GSP.md",
-    "02_Knowledge/模型与案例/OneTrans-GSR：离线列表奖励驱动单个策略统一重排与混排.md",
-    "02_Knowledge/模型与案例/NAR4Rec：并行位置匹配与负反馈训练加速列表生成.md",
-    "02_Knowledge/模型与案例/NAR4Rec：并行位置匹配与效用负反馈实现低延迟生成式重排.md",
-    "02_Knowledge/模型与案例/DHEN通过异构交互的分层集成扩展点击率预测能力.md",
     "01_Sources/论文报告/ReferencesPDF/Non-autoregressive Generative Models for Reranking Recommendation.pdf",
     "01_Sources/论文报告/ReferencesPDF/DHEN A deep and hierarchical ensemble network for large-scale click-through rate.pdf",
     "01_Sources/论文报告/2026ByteDance_OneTrans-GSR.pdf",
     "01_Sources/论文报告/2026Alibaba_UGR.pdf",
     "01_Sources/论文报告/2024Kuaishou_NAR4Rec.pdf",
-    "04_Outputs/文章/2026-11-12｜算法面试复盘：AUC、优化器与多目标梯度隔离｜初稿.md",
-    "Clippings/抖音广告&电商LONGER无GSU的End2End长序列建模.md",
-    "Clippings/论文分享｜推荐系统的“Attention Moment”要来了？快手 UniMixer 重新思考推荐 Scaling Law.md",
-    "02_Knowledge/概念卡片/DPO离线与GRPO在线：机制差异与生成式推荐中的选型.md",
-    "02_Knowledge/概念卡片/DPO、GRPO、RSPO：从逐条偏好优化到列表级业务价值优化.md",
-    "02_Knowledge/模型与案例/UGR：面向异构电商推荐的统一生成式排序.md",
-    "02_Knowledge/模型与案例/GenRank：大规模生成式排序的工业验证.md",
-    "02_Knowledge/模型与案例/点评到餐NeuralAuction实验：用序特征实现计费调控并量化激励兼容代价.md",
-    "02_Knowledge/模型与案例/外卖搜索广告校准模型的LLM文本建模：双路transformer与三重loss对齐文本与ID表征.md",
-    "02_Knowledge/模型与案例/外卖列表广告生成式整体拍卖一期：用非自回归生成与RegretNet计费突破阶乘组合空间.md",
-    "02_Knowledge/模型与案例/堆叠因子分解机实现推荐系统缩放定律：Wukong 在 100+ GFLOPexample 下持续提升质量.md",
     "01_Sources/论文报告/2021Alibaba_NeuralAuction.pdf",
     "99_Attachments/图片/帕累托前沿对比示例-M1vsM2.png",
     "99_Attachments/图片/gen_pareto_front.py",
